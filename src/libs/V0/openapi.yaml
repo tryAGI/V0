@@ -5106,6 +5106,83 @@ paths:
                 $ref: "#/components/schemas/InternalServerError"
       security:
         - apiKey: []
+  /chats/{chatId}/versions/{versionId}/restore:
+    post:
+      summary: Restore Block
+      description: Restores a block to a specific version.
+      operationId: chats.restore
+      tags:
+        - chats
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VersionDetail"
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnauthorizedError"
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ForbiddenError"
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/NotFoundError"
+        "409":
+          description: Conflict
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ConflictError"
+        "413":
+          description: Payload Too Large
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PayloadTooLargeError"
+        "422":
+          description: Unprocessable Entity
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UnprocessableEntityError"
+        "429":
+          description: Too Many Requests
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TooManyRequestsError"
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InternalServerError"
+      parameters:
+        - name: chatId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: The unique identifier of the chat containing the version to restore.
+        - name: versionId
+          in: path
+          required: true
+          schema:
+            type: string
+          description: The unique identifier of the version to restore.
+      security:
+        - apiKey: []
   /reports/usage:
     get:
       summary: Get Usage Report
