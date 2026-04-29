@@ -135,7 +135,7 @@ namespace V0
                 PrepareProjectsFindEnvVarsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     decrypted: decrypted);
 
                 return __httpRequest;

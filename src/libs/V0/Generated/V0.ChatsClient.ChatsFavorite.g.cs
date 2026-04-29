@@ -139,7 +139,7 @@ namespace V0
                 PrepareChatsFavoriteRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId,
+                    chatId: chatId!,
                     request: request);
 
                 return __httpRequest;

@@ -135,7 +135,7 @@ namespace V0
                 PrepareDeploymentsFindLogsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    deploymentId: deploymentId,
+                    deploymentId: deploymentId!,
                     since: since);
 
                 return __httpRequest;

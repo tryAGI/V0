@@ -139,7 +139,7 @@ namespace V0
                 PrepareMcpServersUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    mcpServerId: mcpServerId,
+                    mcpServerId: mcpServerId!,
                     request: request);
 
                 return __httpRequest;

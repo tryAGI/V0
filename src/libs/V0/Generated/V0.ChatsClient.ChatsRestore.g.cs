@@ -130,8 +130,8 @@ namespace V0
                 PrepareChatsRestoreRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId,
-                    versionId: versionId);
+                    chatId: chatId!,
+                    versionId: versionId!);
 
                 return __httpRequest;
             }

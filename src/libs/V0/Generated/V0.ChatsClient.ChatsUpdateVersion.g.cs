@@ -144,8 +144,8 @@ namespace V0
                 PrepareChatsUpdateVersionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId,
-                    versionId: versionId,
+                    chatId: chatId!,
+                    versionId: versionId!,
                     request: request);
 
                 return __httpRequest;

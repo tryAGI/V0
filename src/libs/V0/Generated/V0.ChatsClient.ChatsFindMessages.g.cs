@@ -144,7 +144,7 @@ namespace V0
                 PrepareChatsFindMessagesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId,
+                    chatId: chatId!,
                     limit: limit,
                     cursor: cursor);
 

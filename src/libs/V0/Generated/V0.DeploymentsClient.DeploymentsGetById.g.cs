@@ -125,7 +125,7 @@ namespace V0
                 PrepareDeploymentsGetByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    deploymentId: deploymentId);
+                    deploymentId: deploymentId!);
 
                 return __httpRequest;
             }

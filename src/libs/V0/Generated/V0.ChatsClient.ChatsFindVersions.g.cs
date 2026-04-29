@@ -144,7 +144,7 @@ namespace V0
                 PrepareChatsFindVersionsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId,
+                    chatId: chatId!,
                     limit: limit,
                     cursor: cursor);
 

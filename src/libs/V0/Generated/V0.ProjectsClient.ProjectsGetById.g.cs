@@ -125,7 +125,7 @@ namespace V0
                 PrepareProjectsGetByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId);
+                    projectId: projectId!);
 
                 return __httpRequest;
             }

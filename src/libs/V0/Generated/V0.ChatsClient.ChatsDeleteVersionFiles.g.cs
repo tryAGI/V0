@@ -144,8 +144,8 @@ namespace V0
                 PrepareChatsDeleteVersionFilesRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId,
-                    versionId: versionId,
+                    chatId: chatId!,
+                    versionId: versionId!,
                     request: request);
 
                 return __httpRequest;

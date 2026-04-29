@@ -136,7 +136,7 @@ namespace V0
                 PrepareProjectsDeleteRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     deleteAllChats: deleteAllChats);
 
                 return __httpRequest;

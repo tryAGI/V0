@@ -139,7 +139,7 @@ namespace V0
                 PrepareChatsForkRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId,
+                    chatId: chatId!,
                     request: request);
 
                 return __httpRequest;
