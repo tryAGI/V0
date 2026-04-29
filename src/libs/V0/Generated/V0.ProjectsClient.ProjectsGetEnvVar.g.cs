@@ -140,8 +140,8 @@ namespace V0
                 PrepareProjectsGetEnvVarRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    environmentVariableId: environmentVariableId,
+                    projectId: projectId!,
+                    environmentVariableId: environmentVariableId!,
                     decrypted: decrypted);
 
                 return __httpRequest;

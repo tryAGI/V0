@@ -140,8 +140,8 @@ namespace V0
                 PrepareChatsGetVersionRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId,
-                    versionId: versionId,
+                    chatId: chatId!,
+                    versionId: versionId!,
                     includeDefaultFiles: includeDefaultFiles);
 
                 return __httpRequest;

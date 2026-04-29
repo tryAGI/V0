@@ -149,7 +149,7 @@ namespace V0
                 PrepareProjectsUpdateEnvVarsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
+                    projectId: projectId!,
                     decrypted: decrypted,
                     request: request);
 

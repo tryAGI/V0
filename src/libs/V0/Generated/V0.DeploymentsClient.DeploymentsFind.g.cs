@@ -146,9 +146,9 @@ namespace V0
                 PrepareDeploymentsFindRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId,
-                    chatId: chatId,
-                    versionId: versionId);
+                    projectId: projectId!,
+                    chatId: chatId!,
+                    versionId: versionId!);
 
                 return __httpRequest;
             }

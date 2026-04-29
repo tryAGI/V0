@@ -139,7 +139,7 @@ namespace V0
                 PrepareHooksUpdateRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    hookId: hookId,
+                    hookId: hookId!,
                     request: request);
 
                 return __httpRequest;

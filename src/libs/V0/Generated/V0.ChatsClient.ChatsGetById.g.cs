@@ -125,7 +125,7 @@ namespace V0
                 PrepareChatsGetByIdRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId);
+                    chatId: chatId!);
 
                 return __httpRequest;
             }

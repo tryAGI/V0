@@ -125,7 +125,7 @@ namespace V0
                 PrepareHooksDeleteRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    hookId: hookId);
+                    hookId: hookId!);
 
                 return __httpRequest;
             }
