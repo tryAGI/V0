@@ -63,16 +63,14 @@ paths:
                   properties:
                     modelId:
                       default: v0-pro
-                      description: Deprecated Model ID field preserved for backward compatibility.
-                      deprecated: true
                       type: string
                       enum:
                         - v0-auto
-                        - v0-opus-4.7
                         - v0-mini
                         - v0-pro
                         - v0-max
                         - v0-max-fast
+                      description: Model to use for the generation.
                     imageGenerations:
                       default: false
                       type: boolean
@@ -1205,16 +1203,14 @@ paths:
                   properties:
                     modelId:
                       default: v0-pro
-                      description: Deprecated Model ID field preserved for backward compatibility.
-                      deprecated: true
                       type: string
                       enum:
                         - v0-auto
-                        - v0-opus-4.7
                         - v0-mini
                         - v0-pro
                         - v0-max
                         - v0-max-fast
+                      description: Model to use for the generation.
                     imageGenerations:
                       default: false
                       type: boolean
@@ -2288,16 +2284,14 @@ paths:
                   properties:
                     modelId:
                       default: v0-pro
-                      description: Deprecated Model ID field preserved for backward compatibility.
-                      deprecated: true
                       type: string
                       enum:
                         - v0-auto
-                        - v0-opus-4.7
                         - v0-mini
                         - v0-pro
                         - v0-max
                         - v0-max-fast
+                      description: Model to use for the generation.
                     imageGenerations:
                       default: false
                       type: boolean
@@ -7021,8 +7015,7 @@ components:
           properties:
             modelId:
               default: v0-pro
-              description: Deprecated Model ID field preserved for backward compatibility.
-              deprecated: true
+              description: Model to use for the generation.
               type: string
               enum:
                 - v0-auto

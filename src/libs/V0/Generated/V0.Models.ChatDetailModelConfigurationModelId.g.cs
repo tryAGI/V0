@@ -4,7 +4,7 @@
 namespace V0
 {
     /// <summary>
-    /// Deprecated Model ID field preserved for backward compatibility.<br/>
+    /// Model to use for the generation.<br/>
     /// Default Value: v0-pro
     /// </summary>
     public enum ChatDetailModelConfigurationModelId

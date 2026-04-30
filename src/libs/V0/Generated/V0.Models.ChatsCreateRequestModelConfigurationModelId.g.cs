@@ -4,7 +4,7 @@
 namespace V0
 {
     /// <summary>
-    /// Deprecated Model ID field preserved for backward compatibility.<br/>
+    /// Model to use for the generation.<br/>
     /// Default Value: v0-pro
     /// </summary>
     public enum ChatsCreateRequestModelConfigurationModelId
@@ -28,10 +28,6 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        V0Opus47,
-        /// <summary>
-        /// 
-        /// </summary>
         V0Pro,
     }
 
@@ -51,7 +47,6 @@ namespace V0
                 ChatsCreateRequestModelConfigurationModelId.V0Max => "v0-max",
                 ChatsCreateRequestModelConfigurationModelId.V0MaxFast => "v0-max-fast",
                 ChatsCreateRequestModelConfigurationModelId.V0Mini => "v0-mini",
-                ChatsCreateRequestModelConfigurationModelId.V0Opus47 => "v0-opus-4.7",
                 ChatsCreateRequestModelConfigurationModelId.V0Pro => "v0-pro",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -67,7 +62,6 @@ namespace V0
                 "v0-max" => ChatsCreateRequestModelConfigurationModelId.V0Max,
                 "v0-max-fast" => ChatsCreateRequestModelConfigurationModelId.V0MaxFast,
                 "v0-mini" => ChatsCreateRequestModelConfigurationModelId.V0Mini,
-                "v0-opus-4.7" => ChatsCreateRequestModelConfigurationModelId.V0Opus47,
                 "v0-pro" => ChatsCreateRequestModelConfigurationModelId.V0Pro,
                 _ => null,
             };

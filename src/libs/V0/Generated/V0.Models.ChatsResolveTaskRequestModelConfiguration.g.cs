@@ -1,6 +1,4 @@
 
-#pragma warning disable CS0618 // Type or member is obsolete
-
 #nullable enable
 
 namespace V0
@@ -11,12 +9,11 @@ namespace V0
     public sealed partial class ChatsResolveTaskRequestModelConfiguration
     {
         /// <summary>
-        /// Deprecated Model ID field preserved for backward compatibility.<br/>
+        /// Model to use for the generation.<br/>
         /// Default Value: v0-pro
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("modelId")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationModelIdJsonConverter))]
-        [global::System.Obsolete("This property marked as deprecated.")]
         public global::V0.ChatsResolveTaskRequestModelConfigurationModelId? ModelId { get; set; }
 
         /// <summary>
@@ -42,6 +39,10 @@ namespace V0
         /// <summary>
         /// Initializes a new instance of the <see cref="ChatsResolveTaskRequestModelConfiguration" /> class.
         /// </summary>
+        /// <param name="modelId">
+        /// Model to use for the generation.<br/>
+        /// Default Value: v0-pro
+        /// </param>
         /// <param name="imageGenerations">
         /// Enables image generations to generate up to 5 images per version.<br/>
         /// Default Value: false
@@ -54,9 +55,11 @@ namespace V0
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatsResolveTaskRequestModelConfiguration(
+            global::V0.ChatsResolveTaskRequestModelConfigurationModelId? modelId,
             bool? imageGenerations,
             bool? thinking)
         {
+            this.ModelId = modelId;
             this.ImageGenerations = imageGenerations;
             this.Thinking = thinking;
         }
