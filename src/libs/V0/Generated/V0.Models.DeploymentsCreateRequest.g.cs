@@ -12,8 +12,7 @@ namespace V0
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// 
@@ -38,18 +37,18 @@ namespace V0
         /// <summary>
         /// Initializes a new instance of the <see cref="DeploymentsCreateRequest" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
         /// <param name="chatId"></param>
         /// <param name="versionId"></param>
+        /// <param name="projectId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DeploymentsCreateRequest(
-            string projectId,
             string chatId,
-            string versionId)
+            string versionId,
+            string? projectId)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectId = projectId;
             this.ChatId = chatId ?? throw new global::System.ArgumentNullException(nameof(chatId));
             this.VersionId = versionId ?? throw new global::System.ArgumentNullException(nameof(versionId));
         }

@@ -38,6 +38,7 @@ paths:
                     properties:
                       url:
                         type: string
+                        description: The URL or data URI of the file or asset to include with the message.
                     required:
                       - url
                     additionalProperties: false
@@ -1191,6 +1192,7 @@ paths:
                     properties:
                       url:
                         type: string
+                        description: The URL or data URI of the file or asset to include with the message.
                     required:
                       - url
                     additionalProperties: false
@@ -2445,10 +2447,10 @@ paths:
       parameters:
         - name: projectId
           in: query
-          required: true
+          required: false
           schema:
-            type: string
             description: The ID of the project to find deployments for
+            type: string
           description: The ID of the project to find deployments for
         - name: chatId
           in: query
@@ -2486,7 +2488,6 @@ paths:
                 versionId:
                   type: string
               required:
-                - projectId
                 - chatId
                 - versionId
               additionalProperties: false
@@ -7191,8 +7192,8 @@ components:
           type: string
           description: The ID of the chat that this deployment is scoped to.
         projectId:
-          type: string
           description: The ID of the project that this deployment is scoped to.
+          type: string
         versionId:
           type: string
           description: The ID of the version that this deployment is scoped to.
@@ -7209,7 +7210,6 @@ components:
         - object
         - inspectorUrl
         - chatId
-        - projectId
         - versionId
         - apiUrl
         - webUrl
@@ -7231,8 +7231,8 @@ components:
           type: string
           description: The ID of the chat that this deployment is scoped to.
         projectId:
-          type: string
           description: The ID of the project that this deployment is scoped to.
+          type: string
         versionId:
           type: string
           description: The ID of the version that this deployment is scoped to.
@@ -7249,7 +7249,6 @@ components:
         - object
         - inspectorUrl
         - chatId
-        - projectId
         - versionId
         - apiUrl
         - webUrl

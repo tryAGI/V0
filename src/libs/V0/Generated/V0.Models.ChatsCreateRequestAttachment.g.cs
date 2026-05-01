@@ -9,7 +9,7 @@ namespace V0
     public sealed partial class ChatsCreateRequestAttachment
     {
         /// <summary>
-        /// 
+        /// The URL or data URI of the file or asset to include with the message.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("url")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -24,7 +24,9 @@ namespace V0
         /// <summary>
         /// Initializes a new instance of the <see cref="ChatsCreateRequestAttachment" /> class.
         /// </summary>
-        /// <param name="url"></param>
+        /// <param name="url">
+        /// The URL or data URI of the file or asset to include with the message.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

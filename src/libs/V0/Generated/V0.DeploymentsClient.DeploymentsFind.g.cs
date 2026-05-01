@@ -27,13 +27,13 @@ namespace V0
             };
         partial void PrepareDeploymentsFindArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string projectId,
+            ref string? projectId,
             ref string chatId,
             ref string versionId);
         partial void PrepareDeploymentsFindRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string projectId,
+            string? projectId,
             string chatId,
             string versionId);
         partial void ProcessDeploymentsFindResponse(
@@ -62,9 +62,9 @@ namespace V0
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::V0.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::V0.DeploymentsFindResponse> DeploymentsFindAsync(
-            string projectId,
             string chatId,
             string versionId,
+            string? projectId = default,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -102,7 +102,7 @@ namespace V0
                                 path: "/deployments",
                                 baseUri: HttpClient.BaseAddress); 
                             __pathBuilder
-                                .AddRequiredParameter("projectId", projectId)
+                                .AddOptionalParameter("projectId", projectId)
                                 .AddRequiredParameter("chatId", chatId)
                                 .AddRequiredParameter("versionId", versionId) 
                                 ;
@@ -146,7 +146,7 @@ namespace V0
                 PrepareDeploymentsFindRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId!,
+                    projectId: projectId,
                     chatId: chatId!,
                     versionId: versionId!);
 
