@@ -21,9 +21,9 @@ namespace V0
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::V0.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::V0.DeploymentsFindResponse> DeploymentsFindAsync(
-            string projectId,
             string chatId,
             string versionId,
+            string? projectId = default,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
