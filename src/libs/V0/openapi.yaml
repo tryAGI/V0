@@ -3619,7 +3619,7 @@ paths:
                 instructions:
                   description: Guidance or goals that provide context for the model when working within the project.
                   type: string
-                  maxLength: 1000
+                  maxLength: 2000
                 vercelProjectId:
                   description: The ID of an existing Vercel project to link to. If not provided, a new Vercel project will be created.
                   type: string
