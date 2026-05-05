@@ -21,6 +21,19 @@ namespace V0
         /// Create MCP Server<br/>
         /// Creates a new MCP server configuration for the authenticated user.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::V0.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::V0.AutoSDKHttpResponse<global::V0.McpServersCreateResponse>> McpServersCreateAsResponseAsync(
+
+            global::V0.McpServersCreateRequest request,
+            global::V0.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create MCP Server<br/>
+        /// Creates a new MCP server configuration for the authenticated user.
+        /// </summary>
         /// <param name="name">
         /// The display name of the MCP server.
         /// </param>
