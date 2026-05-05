@@ -24,6 +24,21 @@ namespace V0
         /// Resolves a pending task in a chat, continuing the conversation. The latest message in the active chat fork must be an assistant message currently blocked on a matching task (integration setup, plan approval, question answers, or permission grants).
         /// </summary>
         /// <param name="chatId"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::V0.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::V0.AutoSDKHttpResponse<global::V0.ChatDetail>> ChatsResolveTaskAsResponseAsync(
+            string chatId,
+
+            global::V0.ChatsResolveTaskRequest request,
+            global::V0.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Resolve Task<br/>
+        /// Resolves a pending task in a chat, continuing the conversation. The latest message in the active chat fork must be an assistant message currently blocked on a matching task (integration setup, plan approval, question answers, or permission grants).
+        /// </summary>
+        /// <param name="chatId"></param>
         /// <param name="task">
         /// The task resolution data. The latest message in the active chat fork must be an assistant message blocked on the matching task type.
         /// </param>

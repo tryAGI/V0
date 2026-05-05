@@ -21,6 +21,19 @@ namespace V0
         /// Create Hook<br/>
         /// Creates a new webhook that listens for specific events. Supports optional association with a chat.
         /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::V0.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::V0.AutoSDKHttpResponse<global::V0.HookDetail>> HooksCreateAsResponseAsync(
+
+            global::V0.HooksCreateRequest request,
+            global::V0.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Create Hook<br/>
+        /// Creates a new webhook that listens for specific events. Supports optional association with a chat.
+        /// </summary>
         /// <param name="name">
         /// A human-readable name for the hook.
         /// </param>
