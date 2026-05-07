@@ -7,7 +7,7 @@ namespace V0
     {
 
 
-        private static readonly global::V0.EndPointSecurityRequirement s_McpServersCreateSecurityRequirement0 =
+        private static readonly global::V0.EndPointSecurityRequirement s_McpServersCreateOAuthAuthorizationUrlSecurityRequirement0 =
             new global::V0.EndPointSecurityRequirement
             {
                 Authorizations = new global::V0.EndPointAuthorizationRequirement[]
@@ -21,41 +21,46 @@ namespace V0
                     },
                 },
             };
-        private static readonly global::V0.EndPointSecurityRequirement[] s_McpServersCreateSecurityRequirements =
+        private static readonly global::V0.EndPointSecurityRequirement[] s_McpServersCreateOAuthAuthorizationUrlSecurityRequirements =
             new global::V0.EndPointSecurityRequirement[]
-            {                s_McpServersCreateSecurityRequirement0,
+            {                s_McpServersCreateOAuthAuthorizationUrlSecurityRequirement0,
             };
-        partial void PrepareMcpServersCreateArguments(
+        partial void PrepareMcpServersCreateOAuthAuthorizationUrlArguments(
             global::System.Net.Http.HttpClient httpClient,
-            global::V0.McpServersCreateRequest request);
-        partial void PrepareMcpServersCreateRequest(
+            ref string mcpServerId,
+            global::V0.McpServersCreateOAuthAuthorizationUrlRequest request);
+        partial void PrepareMcpServersCreateOAuthAuthorizationUrlRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            global::V0.McpServersCreateRequest request);
-        partial void ProcessMcpServersCreateResponse(
+            string mcpServerId,
+            global::V0.McpServersCreateOAuthAuthorizationUrlRequest request);
+        partial void ProcessMcpServersCreateOAuthAuthorizationUrlResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessMcpServersCreateResponseContent(
+        partial void ProcessMcpServersCreateOAuthAuthorizationUrlResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Create MCP Server<br/>
-        /// Creates a new MCP server configuration for the authenticated user. Supports OAuth, bearer token, custom headers, and unauthenticated servers.
+        /// Create MCP Server OAuth Authorization URL<br/>
+        /// Creates an OAuth authorization URL for an OAuth MCP server. Redirect the user to the returned URL, and the Platform API OAuth callback will store the resulting tokens before redirecting to your returnUrl.
         /// </summary>
+        /// <param name="mcpServerId"></param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::V0.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::V0.McpServersCreateResponse> McpServersCreateAsync(
+        public async global::System.Threading.Tasks.Task<global::V0.McpServersCreateOAuthAuthorizationUrlResponse> McpServersCreateOAuthAuthorizationUrlAsync(
+            string mcpServerId,
 
-            global::V0.McpServersCreateRequest request,
+            global::V0.McpServersCreateOAuthAuthorizationUrlRequest request,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await McpServersCreateAsResponseAsync(
+            var __response = await McpServersCreateOAuthAuthorizationUrlAsResponseAsync(
+                mcpServerId: mcpServerId,
 
                 request: request,
                 requestOptions: requestOptions,
@@ -65,16 +70,18 @@ namespace V0
             return __response.Body;
         }
         /// <summary>
-        /// Create MCP Server<br/>
-        /// Creates a new MCP server configuration for the authenticated user. Supports OAuth, bearer token, custom headers, and unauthenticated servers.
+        /// Create MCP Server OAuth Authorization URL<br/>
+        /// Creates an OAuth authorization URL for an OAuth MCP server. Redirect the user to the returned URL, and the Platform API OAuth callback will store the resulting tokens before redirecting to your returnUrl.
         /// </summary>
+        /// <param name="mcpServerId"></param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::V0.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::V0.AutoSDKHttpResponse<global::V0.McpServersCreateResponse>> McpServersCreateAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::V0.AutoSDKHttpResponse<global::V0.McpServersCreateOAuthAuthorizationUrlResponse>> McpServersCreateOAuthAuthorizationUrlAsResponseAsync(
+            string mcpServerId,
 
-            global::V0.McpServersCreateRequest request,
+            global::V0.McpServersCreateOAuthAuthorizationUrlRequest request,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -82,15 +89,16 @@ namespace V0
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareMcpServersCreateArguments(
+            PrepareMcpServersCreateOAuthAuthorizationUrlArguments(
                 httpClient: HttpClient,
+                mcpServerId: ref mcpServerId,
                 request: request);
 
 
             var __authorizations = global::V0.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_McpServersCreateSecurityRequirements,
-                operationName: "McpServersCreateAsync");
+                securityRequirements: s_McpServersCreateOAuthAuthorizationUrlSecurityRequirements,
+                operationName: "McpServersCreateOAuthAuthorizationUrlAsync");
 
             using var __timeoutCancellationTokenSource = global::V0.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -110,7 +118,7 @@ namespace V0
             {
 
                             var __pathBuilder = new global::V0.PathBuilder(
-                                path: "/mcp-servers",
+                                path: $"/mcp-servers/{mcpServerId}/oauth/authorize",
                                 baseUri: HttpClient.BaseAddress);
                             var __path = __pathBuilder.ToString();
                 __path = global::V0.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -155,9 +163,10 @@ namespace V0
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareMcpServersCreateRequest(
+                PrepareMcpServersCreateOAuthAuthorizationUrlRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    mcpServerId: mcpServerId!,
                     request: request);
 
                 return __httpRequest;
@@ -175,9 +184,9 @@ namespace V0
                     await global::V0.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::V0.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "McpServersCreate",
-                                methodName: "McpServersCreateAsync",
-                                pathTemplate: "\"/mcp-servers\"",
+                                operationId: "McpServersCreateOAuthAuthorizationUrl",
+                                methodName: "McpServersCreateOAuthAuthorizationUrlAsync",
+                                pathTemplate: "$\"/mcp-servers/{mcpServerId}/oauth/authorize\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -209,9 +218,9 @@ namespace V0
                         await global::V0.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::V0.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "McpServersCreate",
-                                methodName: "McpServersCreateAsync",
-                                pathTemplate: "\"/mcp-servers\"",
+                                operationId: "McpServersCreateOAuthAuthorizationUrl",
+                                methodName: "McpServersCreateOAuthAuthorizationUrlAsync",
+                                pathTemplate: "$\"/mcp-servers/{mcpServerId}/oauth/authorize\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -250,9 +259,9 @@ namespace V0
                         await global::V0.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::V0.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "McpServersCreate",
-                                methodName: "McpServersCreateAsync",
-                                pathTemplate: "\"/mcp-servers\"",
+                                operationId: "McpServersCreateOAuthAuthorizationUrl",
+                                methodName: "McpServersCreateOAuthAuthorizationUrlAsync",
+                                pathTemplate: "$\"/mcp-servers/{mcpServerId}/oauth/authorize\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -290,7 +299,7 @@ namespace V0
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessMcpServersCreateResponse(
+                ProcessMcpServersCreateOAuthAuthorizationUrlResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -298,9 +307,9 @@ namespace V0
                     await global::V0.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::V0.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "McpServersCreate",
-                                methodName: "McpServersCreateAsync",
-                                pathTemplate: "\"/mcp-servers\"",
+                                operationId: "McpServersCreateOAuthAuthorizationUrl",
+                                methodName: "McpServersCreateOAuthAuthorizationUrlAsync",
+                                pathTemplate: "$\"/mcp-servers/{mcpServerId}/oauth/authorize\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -320,9 +329,9 @@ namespace V0
                     await global::V0.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::V0.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "McpServersCreate",
-                                methodName: "McpServersCreateAsync",
-                                pathTemplate: "\"/mcp-servers\"",
+                                operationId: "McpServersCreateOAuthAuthorizationUrl",
+                                methodName: "McpServersCreateOAuthAuthorizationUrlAsync",
+                                pathTemplate: "$\"/mcp-servers/{mcpServerId}/oauth/authorize\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest!,
@@ -654,7 +663,7 @@ namespace V0
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessMcpServersCreateResponseContent(
+                                ProcessMcpServersCreateOAuthAuthorizationUrlResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -663,9 +672,9 @@ namespace V0
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::V0.McpServersCreateResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::V0.McpServersCreateOAuthAuthorizationUrlResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::V0.AutoSDKHttpResponse<global::V0.McpServersCreateResponse>(
+                                    return new global::V0.AutoSDKHttpResponse<global::V0.McpServersCreateOAuthAuthorizationUrlResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::V0.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -697,9 +706,9 @@ namespace V0
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::V0.McpServersCreateResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::V0.McpServersCreateOAuthAuthorizationUrlResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::V0.AutoSDKHttpResponse<global::V0.McpServersCreateResponse>(
+                                    return new global::V0.AutoSDKHttpResponse<global::V0.McpServersCreateOAuthAuthorizationUrlResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::V0.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -742,54 +751,29 @@ namespace V0
             }
         }
         /// <summary>
-        /// Create MCP Server<br/>
-        /// Creates a new MCP server configuration for the authenticated user. Supports OAuth, bearer token, custom headers, and unauthenticated servers.
+        /// Create MCP Server OAuth Authorization URL<br/>
+        /// Creates an OAuth authorization URL for an OAuth MCP server. Redirect the user to the returned URL, and the Platform API OAuth callback will store the resulting tokens before redirecting to your returnUrl.
         /// </summary>
-        /// <param name="name">
-        /// The display name of the MCP server.
-        /// </param>
-        /// <param name="url">
-        /// The URL of the MCP server. Must be HTTPS in production.
-        /// </param>
-        /// <param name="description">
-        /// An optional description of the MCP server.
-        /// </param>
-        /// <param name="enabled">
-        /// Whether the MCP server is enabled. Defaults to true.<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="auth">
-        /// Authentication configuration. Defaults to no authentication.<br/>
-        /// Default Value: {"type":"none"}
-        /// </param>
-        /// <param name="scope">
-        /// The scope of the MCP server. Defaults to user.<br/>
-        /// Default Value: user
+        /// <param name="mcpServerId"></param>
+        /// <param name="returnUrl">
+        /// An absolute URL in your application where v0 redirects after OAuth completes. HTTPS is required in production.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::V0.McpServersCreateResponse> McpServersCreateAsync(
-            string name,
-            string url,
-            string? description = default,
-            bool? enabled = default,
-            global::V0.AnyOf<global::V0.McpServersCreateRequestAuthVariant1, global::V0.McpServersCreateRequestAuthVariant2, global::V0.McpServersCreateRequestAuthVariant3, global::V0.McpServersCreateRequestAuthVariant4>? auth = default,
-            global::V0.McpServersCreateRequestScope? scope = default,
+        public async global::System.Threading.Tasks.Task<global::V0.McpServersCreateOAuthAuthorizationUrlResponse> McpServersCreateOAuthAuthorizationUrlAsync(
+            string mcpServerId,
+            string returnUrl,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::V0.McpServersCreateRequest
+            var __request = new global::V0.McpServersCreateOAuthAuthorizationUrlRequest
             {
-                Name = name,
-                Url = url,
-                Description = description,
-                Enabled = enabled,
-                Auth = auth,
-                Scope = scope,
+                ReturnUrl = returnUrl,
             };
 
-            return await McpServersCreateAsync(
+            return await McpServersCreateOAuthAuthorizationUrlAsync(
+                mcpServerId: mcpServerId,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);

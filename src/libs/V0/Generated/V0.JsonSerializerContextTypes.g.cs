@@ -904,31 +904,31 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.AnyOf<global::V0.McpServersCreateRequestAuthVariant1, global::V0.McpServersCreateRequestAuthVariant2, global::V0.McpServersCreateRequestAuthVariant3>? Type219 { get; set; }
+        public global::V0.McpServersCreateRequestAuthVariant1? Type219 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersCreateRequestAuthVariant1? Type220 { get; set; }
+        public global::V0.McpServersCreateRequestAuthVariant2? Type220 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersCreateRequestAuthVariant2? Type221 { get; set; }
+        public global::V0.McpServersCreateRequestAuthVariant3? Type221 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersCreateRequestAuthVariant3? Type222 { get; set; }
+        public global::V0.McpServersCreateRequestAuthVariant4? Type222 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersCreateRequestScope? Type223 { get; set; }
+        public global::V0.McpServersCreateRequestAuthVariant4Config? Type223 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersUpdateRequest? Type224 { get; set; }
+        public global::V0.McpServersCreateRequestScope? Type224 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.AnyOf<global::V0.McpServersUpdateRequestAuthVariant1, global::V0.McpServersUpdateRequestAuthVariant2, global::V0.McpServersUpdateRequestAuthVariant3>? Type225 { get; set; }
+        public global::V0.McpServersUpdateRequest? Type225 { get; set; }
         /// <summary>
         /// 
         /// </summary>
@@ -944,415 +944,431 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersUpdateRequestScope? Type229 { get; set; }
+        public global::V0.McpServersUpdateRequestAuthVariant4? Type229 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsFindIsFavorite? Type230 { get; set; }
+        public global::V0.McpServersUpdateRequestAuthVariant4Config? Type230 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsGetVersionIncludeDefaultFiles? Type231 { get; set; }
+        public global::V0.McpServersUpdateRequestScope? Type231 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsDownloadVersionFormat? Type232 { get; set; }
+        public global::V0.McpServersCreateOAuthAuthorizationUrlRequest? Type232 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsDownloadVersionIncludeDefaultFiles? Type233 { get; set; }
+        public global::V0.ChatsFindIsFavorite? Type233 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsDeleteDeleteAllChats? Type234 { get; set; }
+        public global::V0.ChatsGetVersionIncludeDefaultFiles? Type234 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsFindEnvVarsDecrypted? Type235 { get; set; }
+        public global::V0.ChatsDownloadVersionFormat? Type235 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsCreateEnvVarsDecrypted? Type236 { get; set; }
+        public global::V0.ChatsDownloadVersionIncludeDefaultFiles? Type236 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsUpdateEnvVarsDecrypted? Type237 { get; set; }
+        public global::V0.ProjectsDeleteDeleteAllChats? Type237 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsGetEnvVarDecrypted? Type238 { get; set; }
+        public global::V0.ProjectsFindEnvVarsDecrypted? Type238 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public int? Type239 { get; set; }
+        public global::V0.ProjectsCreateEnvVarsDecrypted? Type239 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsFindResponse? Type240 { get; set; }
+        public global::V0.ProjectsUpdateEnvVarsDecrypted? Type240 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ChatSummary>? Type241 { get; set; }
+        public global::V0.ProjectsGetEnvVarDecrypted? Type241 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsDeleteResponse? Type242 { get; set; }
+        public int? Type242 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsFavoriteResponse? Type243 { get; set; }
+        public global::V0.ChatsFindResponse? Type243 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsFindMessagesResponse? Type244 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ChatSummary>? Type244 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.MessageSummary>? Type245 { get; set; }
+        public global::V0.ChatsDeleteResponse? Type245 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsFindMessagesResponsePagination? Type246 { get; set; }
+        public global::V0.ChatsFavoriteResponse? Type246 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsFindVersionsResponse? Type247 { get; set; }
+        public global::V0.ChatsFindMessagesResponse? Type247 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.VersionSummary>? Type248 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.MessageSummary>? Type248 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsFindVersionsResponsePagination? Type249 { get; set; }
+        public global::V0.ChatsFindMessagesResponsePagination? Type249 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsFindVersionsResponseMeta? Type250 { get; set; }
+        public global::V0.ChatsFindVersionsResponse? Type250 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatsStopResponse? Type251 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.VersionSummary>? Type251 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.DeploymentsFindResponse? Type252 { get; set; }
+        public global::V0.ChatsFindVersionsResponsePagination? Type252 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.DeploymentDetail>? Type253 { get; set; }
+        public global::V0.ChatsFindVersionsResponseMeta? Type253 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.DeploymentsDeleteResponse? Type254 { get; set; }
+        public global::V0.ChatsStopResponse? Type254 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.DeploymentsFindLogsResponse? Type255 { get; set; }
+        public global::V0.DeploymentsFindResponse? Type255 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.DeploymentsFindLogsResponseLog>? Type256 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.DeploymentDetail>? Type256 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.DeploymentsFindLogsResponseLog? Type257 { get; set; }
+        public global::V0.DeploymentsDeleteResponse? Type257 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.DeploymentsFindLogsResponseLogType? Type258 { get; set; }
+        public global::V0.DeploymentsFindLogsResponse? Type258 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.DeploymentsFindLogsResponseLogLevel? Type259 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.DeploymentsFindLogsResponseLog>? Type259 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.DeploymentsFindErrorsResponse? Type260 { get; set; }
+        public global::V0.DeploymentsFindLogsResponseLog? Type260 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.HooksFindResponse? Type261 { get; set; }
+        public global::V0.DeploymentsFindLogsResponseLogType? Type261 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.HookSummary>? Type262 { get; set; }
+        public global::V0.DeploymentsFindLogsResponseLogLevel? Type262 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.HooksDeleteResponse? Type263 { get; set; }
+        public global::V0.DeploymentsFindErrorsResponse? Type263 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.IntegrationsVercelProjectsFindResponse? Type264 { get; set; }
+        public global::V0.HooksFindResponse? Type264 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.VercelProjectSummary>? Type265 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.HookSummary>? Type265 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsFindResponse? Type266 { get; set; }
+        public global::V0.HooksDeleteResponse? Type266 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ProjectSummary>? Type267 { get; set; }
+        public global::V0.IntegrationsVercelProjectsFindResponse? Type267 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsDeleteResponse? Type268 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.VercelProjectSummary>? Type268 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsAssignResponse? Type269 { get; set; }
+        public global::V0.ProjectsFindResponse? Type269 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsFindEnvVarsResponse? Type270 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ProjectSummary>? Type270 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.EnvironmentVariableSummarySchema>? Type271 { get; set; }
+        public global::V0.ProjectsDeleteResponse? Type271 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsCreateEnvVarsResponse? Type272 { get; set; }
+        public global::V0.ProjectsAssignResponse? Type272 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsUpdateEnvVarsResponse? Type273 { get; set; }
+        public global::V0.ProjectsFindEnvVarsResponse? Type273 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsDeleteEnvVarsResponse? Type274 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.EnvironmentVariableSummarySchema>? Type274 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ProjectsDeleteEnvVarsResponseDataItem>? Type275 { get; set; }
+        public global::V0.ProjectsCreateEnvVarsResponse? Type275 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsDeleteEnvVarsResponseDataItem? Type276 { get; set; }
+        public global::V0.ProjectsUpdateEnvVarsResponse? Type276 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ProjectsGetEnvVarResponse? Type277 { get; set; }
+        public global::V0.ProjectsDeleteEnvVarsResponse? Type277 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.RateLimitsFindResponse? Type278 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ProjectsDeleteEnvVarsResponseDataItem>? Type278 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.RateLimitsFindResponseDailyLimit? Type279 { get; set; }
+        public global::V0.ProjectsDeleteEnvVarsResponseDataItem? Type279 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.AnyOf<global::V0.UserGetBillingResponseVariant1, global::V0.UserGetBillingResponseVariant2>? Type280 { get; set; }
+        public global::V0.ProjectsGetEnvVarResponse? Type280 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetBillingResponseVariant1? Type281 { get; set; }
+        public global::V0.RateLimitsFindResponse? Type281 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetBillingResponseVariant1Data? Type282 { get; set; }
+        public global::V0.RateLimitsFindResponseDailyLimit? Type282 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetBillingResponseVariant1DataBillingCycle? Type283 { get; set; }
+        public global::V0.AnyOf<global::V0.UserGetBillingResponseVariant1, global::V0.UserGetBillingResponseVariant2>? Type283 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetBillingResponseVariant1DataBalance? Type284 { get; set; }
+        public global::V0.UserGetBillingResponseVariant1? Type284 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetBillingResponseVariant1DataOnDemand? Type285 { get; set; }
+        public global::V0.UserGetBillingResponseVariant1Data? Type285 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.UserGetBillingResponseVariant1DataOnDemandBlock>? Type286 { get; set; }
+        public global::V0.UserGetBillingResponseVariant1DataBillingCycle? Type286 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetBillingResponseVariant1DataOnDemandBlock? Type287 { get; set; }
+        public global::V0.UserGetBillingResponseVariant1DataBalance? Type287 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetBillingResponseVariant2? Type288 { get; set; }
+        public global::V0.UserGetBillingResponseVariant1DataOnDemand? Type288 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetBillingResponseVariant2Data? Type289 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.UserGetBillingResponseVariant1DataOnDemandBlock>? Type289 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetPlanResponse? Type290 { get; set; }
+        public global::V0.UserGetBillingResponseVariant1DataOnDemandBlock? Type290 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetPlanResponseBillingCycle? Type291 { get; set; }
+        public global::V0.UserGetBillingResponseVariant2? Type291 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetPlanResponseBalance? Type292 { get; set; }
+        public global::V0.UserGetBillingResponseVariant2Data? Type292 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.UserGetScopesResponse? Type293 { get; set; }
+        public global::V0.UserGetPlanResponse? Type293 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ScopeSummary>? Type294 { get; set; }
+        public global::V0.UserGetPlanResponseBillingCycle? Type294 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUsageResponse? Type295 { get; set; }
+        public global::V0.UserGetPlanResponseBalance? Type295 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ReportsGetUsageResponseDataItem>? Type296 { get; set; }
+        public global::V0.UserGetScopesResponse? Type296 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUsageResponseDataItem? Type297 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ScopeSummary>? Type297 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUsageResponseDataItemType? Type298 { get; set; }
+        public global::V0.ReportsGetUsageResponse? Type298 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUsageResponsePagination? Type299 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ReportsGetUsageResponseDataItem>? Type299 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUsageResponseMeta? Type300 { get; set; }
+        public global::V0.ReportsGetUsageResponseDataItem? Type300 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetAIUsageResponse? Type301 { get; set; }
+        public global::V0.ReportsGetUsageResponseDataItemType? Type301 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ReportsGetAIUsageResponseDataItem>? Type302 { get; set; }
+        public global::V0.ReportsGetUsageResponsePagination? Type302 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetAIUsageResponseDataItem? Type303 { get; set; }
+        public global::V0.ReportsGetUsageResponseMeta? Type303 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetAIUsageResponsePagination? Type304 { get; set; }
+        public global::V0.ReportsGetAIUsageResponse? Type304 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetAIUsageResponseDateRange? Type305 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ReportsGetAIUsageResponseDataItem>? Type305 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponse? Type306 { get; set; }
+        public global::V0.ReportsGetAIUsageResponseDataItem? Type306 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ReportsGetUserActivityResponseDataItem>? Type307 { get; set; }
+        public global::V0.ReportsGetAIUsageResponsePagination? Type307 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseDataItem? Type308 { get; set; }
+        public global::V0.ReportsGetAIUsageResponseDateRange? Type308 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseDataItemUser? Type309 { get; set; }
+        public global::V0.ReportsGetUserActivityResponse? Type309 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2? Type310 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ReportsGetUserActivityResponseDataItem>? Type310 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseMeta? Type311 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseDataItem? Type311 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseMetaDateRange? Type312 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseDataItemUser? Type312 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersFindResponse? Type313 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2? Type313 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.McpServersFindResponseDataItem>? Type314 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseMeta? Type314 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersFindResponseDataItem? Type315 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseMetaDateRange? Type315 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersFindResponseDataItemAuth? Type316 { get; set; }
+        public global::V0.McpServersFindResponse? Type316 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersFindResponseDataItemAuthType? Type317 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.McpServersFindResponseDataItem>? Type317 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersFindResponseDataItemScope? Type318 { get; set; }
+        public global::V0.McpServersFindResponseDataItem? Type318 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersCreateResponse? Type319 { get; set; }
+        public global::V0.McpServersFindResponseDataItemAuth? Type319 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersCreateResponseAuth? Type320 { get; set; }
+        public global::V0.McpServersFindResponseDataItemAuthType? Type320 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersCreateResponseAuthType? Type321 { get; set; }
+        public global::V0.McpServersFindResponseDataItemScope? Type321 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersCreateResponseScope? Type322 { get; set; }
+        public global::V0.McpServersCreateResponse? Type322 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersGetByIdResponse? Type323 { get; set; }
+        public global::V0.McpServersCreateResponseAuth? Type323 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersGetByIdResponseAuth? Type324 { get; set; }
+        public global::V0.McpServersCreateResponseAuthType? Type324 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersGetByIdResponseAuthType? Type325 { get; set; }
+        public global::V0.McpServersCreateResponseScope? Type325 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersGetByIdResponseScope? Type326 { get; set; }
+        public global::V0.McpServersGetByIdResponse? Type326 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersUpdateResponse? Type327 { get; set; }
+        public global::V0.McpServersGetByIdResponseAuth? Type327 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersUpdateResponseAuth? Type328 { get; set; }
+        public global::V0.McpServersGetByIdResponseAuthType? Type328 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersUpdateResponseAuthType? Type329 { get; set; }
+        public global::V0.McpServersGetByIdResponseScope? Type329 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersUpdateResponseScope? Type330 { get; set; }
+        public global::V0.McpServersUpdateResponse? Type330 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.McpServersDeleteResponse? Type331 { get; set; }
+        public global::V0.McpServersUpdateResponseAuth? Type331 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::V0.McpServersUpdateResponseAuthType? Type332 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::V0.McpServersUpdateResponseScope? Type333 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::V0.McpServersDeleteResponse? Type334 { get; set; }
+        /// <summary>
+        /// 
+        /// </summary>
+        public global::V0.McpServersCreateOAuthAuthorizationUrlResponse? Type335 { get; set; }
 
         /// <summary>
         /// 
