@@ -50,5 +50,18 @@ namespace V0
         public NotFoundErrorError()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="NotFoundErrorError"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static NotFoundErrorError FromMessage(string message)
+        {
+            return new NotFoundErrorError
+            {
+                Message = message,
+            };
+        }
+
     }
 }

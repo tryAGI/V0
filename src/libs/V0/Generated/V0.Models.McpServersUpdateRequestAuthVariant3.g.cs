@@ -54,5 +54,18 @@ namespace V0
         public McpServersUpdateRequestAuthVariant3()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="McpServersUpdateRequestAuthVariant3"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static McpServersUpdateRequestAuthVariant3 FromHeaders(global::System.Collections.Generic.Dictionary<string, string> headers)
+        {
+            return new McpServersUpdateRequestAuthVariant3
+            {
+                Headers = headers,
+            };
+        }
+
     }
 }

@@ -50,5 +50,18 @@ namespace V0
         public PayloadTooLargeErrorError()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="PayloadTooLargeErrorError"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static PayloadTooLargeErrorError FromMessage(string message)
+        {
+            return new PayloadTooLargeErrorError
+            {
+                Message = message,
+            };
+        }
+
     }
 }

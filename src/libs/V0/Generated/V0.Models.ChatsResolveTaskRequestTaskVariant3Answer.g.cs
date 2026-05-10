@@ -77,5 +77,6 @@ namespace V0
         public ChatsResolveTaskRequestTaskVariant3Answer()
         {
         }
+
     }
 }

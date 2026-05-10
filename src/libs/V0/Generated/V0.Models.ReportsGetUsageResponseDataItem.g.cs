@@ -140,5 +140,6 @@ namespace V0
         public ReportsGetUsageResponseDataItem()
         {
         }
+
     }
 }

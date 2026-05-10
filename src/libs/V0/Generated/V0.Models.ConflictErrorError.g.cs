@@ -50,5 +50,18 @@ namespace V0
         public ConflictErrorError()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ConflictErrorError"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ConflictErrorError FromMessage(string message)
+        {
+            return new ConflictErrorError
+            {
+                Message = message,
+            };
+        }
+
     }
 }

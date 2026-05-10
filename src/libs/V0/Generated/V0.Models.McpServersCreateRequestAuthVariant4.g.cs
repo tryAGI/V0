@@ -54,5 +54,18 @@ namespace V0
         public McpServersCreateRequestAuthVariant4()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="McpServersCreateRequestAuthVariant4"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static McpServersCreateRequestAuthVariant4 FromConfig(global::V0.McpServersCreateRequestAuthVariant4Config config)
+        {
+            return new McpServersCreateRequestAuthVariant4
+            {
+                Config = config,
+            };
+        }
+
     }
 }

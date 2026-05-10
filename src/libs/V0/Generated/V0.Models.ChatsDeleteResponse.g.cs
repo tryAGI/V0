@@ -60,5 +60,18 @@ namespace V0
         public ChatsDeleteResponse()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ChatsDeleteResponse"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ChatsDeleteResponse FromId(string id)
+        {
+            return new ChatsDeleteResponse
+            {
+                Id = id,
+            };
+        }
+
     }
 }

@@ -65,5 +65,18 @@ namespace V0
         public ChatsInitRequestVariant3()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ChatsInitRequestVariant3"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ChatsInitRequestVariant3 FromRegistry(global::V0.ChatsInitRequestVariant3Registry registry)
+        {
+            return new ChatsInitRequestVariant3
+            {
+                Registry = registry,
+            };
+        }
+
     }
 }

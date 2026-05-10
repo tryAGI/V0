@@ -53,5 +53,6 @@ namespace V0
         public UserPreferencesResponseSchema()
         {
         }
+
     }
 }

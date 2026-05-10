@@ -60,5 +60,18 @@ namespace V0
         public HooksDeleteResponse()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="HooksDeleteResponse"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static HooksDeleteResponse FromId(string id)
+        {
+            return new HooksDeleteResponse
+            {
+                Id = id,
+            };
+        }
+
     }
 }

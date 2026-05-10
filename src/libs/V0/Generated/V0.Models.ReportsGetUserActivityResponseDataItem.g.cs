@@ -118,5 +118,6 @@ namespace V0
         public ReportsGetUserActivityResponseDataItem()
         {
         }
+
     }
 }

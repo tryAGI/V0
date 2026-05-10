@@ -70,5 +70,6 @@ namespace V0
         public ReportsGetUsageResponse()
         {
         }
+
     }
 }

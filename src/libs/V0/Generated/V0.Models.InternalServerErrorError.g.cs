@@ -50,5 +50,18 @@ namespace V0
         public InternalServerErrorError()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="InternalServerErrorError"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static InternalServerErrorError FromMessage(string message)
+        {
+            return new InternalServerErrorError
+            {
+                Message = message,
+            };
+        }
+
     }
 }

@@ -48,5 +48,6 @@ namespace V0
         public ReportsGetAIUsageResponseDateRange()
         {
         }
+
     }
 }
