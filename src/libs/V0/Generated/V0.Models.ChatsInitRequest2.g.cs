@@ -79,5 +79,6 @@ namespace V0
         public ChatsInitRequest2()
         {
         }
+
     }
 }

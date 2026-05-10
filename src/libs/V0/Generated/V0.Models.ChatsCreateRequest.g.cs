@@ -166,5 +166,6 @@ namespace V0
         public ChatsCreateRequest()
         {
         }
+
     }
 }

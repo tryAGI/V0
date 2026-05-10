@@ -125,5 +125,6 @@ namespace V0
         public DeploymentDetail()
         {
         }
+
     }
 }

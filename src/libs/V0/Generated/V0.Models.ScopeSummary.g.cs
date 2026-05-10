@@ -65,5 +65,18 @@ namespace V0
         public ScopeSummary()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ScopeSummary"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ScopeSummary FromId(string id)
+        {
+            return new ScopeSummary
+            {
+                Id = id,
+            };
+        }
+
     }
 }

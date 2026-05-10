@@ -99,5 +99,6 @@ namespace V0
         public MessageSummaryAttachment()
         {
         }
+
     }
 }

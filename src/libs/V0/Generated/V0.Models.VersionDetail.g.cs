@@ -124,5 +124,6 @@ namespace V0
         public VersionDetail()
         {
         }
+
     }
 }

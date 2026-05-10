@@ -50,5 +50,18 @@ namespace V0
         public TooManyRequestsErrorError()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="TooManyRequestsErrorError"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static TooManyRequestsErrorError FromMessage(string message)
+        {
+            return new TooManyRequestsErrorError
+            {
+                Message = message,
+            };
+        }
+
     }
 }

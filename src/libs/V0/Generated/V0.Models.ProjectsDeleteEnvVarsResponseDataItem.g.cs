@@ -60,5 +60,18 @@ namespace V0
         public ProjectsDeleteEnvVarsResponseDataItem()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ProjectsDeleteEnvVarsResponseDataItem"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ProjectsDeleteEnvVarsResponseDataItem FromId(string id)
+        {
+            return new ProjectsDeleteEnvVarsResponseDataItem
+            {
+                Id = id,
+            };
+        }
+
     }
 }

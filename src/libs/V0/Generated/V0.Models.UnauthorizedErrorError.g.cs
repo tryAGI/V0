@@ -50,5 +50,18 @@ namespace V0
         public UnauthorizedErrorError()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="UnauthorizedErrorError"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static UnauthorizedErrorError FromMessage(string message)
+        {
+            return new UnauthorizedErrorError
+            {
+                Message = message,
+            };
+        }
+
     }
 }

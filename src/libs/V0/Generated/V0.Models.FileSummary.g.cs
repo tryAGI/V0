@@ -54,5 +54,18 @@ namespace V0
         public FileSummary()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="FileSummary"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static FileSummary FromName(string name)
+        {
+            return new FileSummary
+            {
+                Name = name,
+            };
+        }
+
     }
 }

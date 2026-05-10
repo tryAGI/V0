@@ -54,5 +54,18 @@ namespace V0
         public ChatsInitRequestVariant5()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ChatsInitRequestVariant5"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ChatsInitRequestVariant5 FromTemplateId(string templateId)
+        {
+            return new ChatsInitRequestVariant5
+            {
+                TemplateId = templateId,
+            };
+        }
+
     }
 }

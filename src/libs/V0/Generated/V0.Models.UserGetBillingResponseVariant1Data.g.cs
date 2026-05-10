@@ -89,5 +89,6 @@ namespace V0
         public UserGetBillingResponseVariant1Data()
         {
         }
+
     }
 }

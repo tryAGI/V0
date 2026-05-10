@@ -49,5 +49,6 @@ namespace V0
         public ChatsInitRequestVariant2Repo()
         {
         }
+
     }
 }

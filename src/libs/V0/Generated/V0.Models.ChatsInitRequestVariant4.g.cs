@@ -65,5 +65,18 @@ namespace V0
         public ChatsInitRequestVariant4()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ChatsInitRequestVariant4"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ChatsInitRequestVariant4 FromZip(global::V0.ChatsInitRequestVariant4Zip zip)
+        {
+            return new ChatsInitRequestVariant4
+            {
+                Zip = zip,
+            };
+        }
+
     }
 }

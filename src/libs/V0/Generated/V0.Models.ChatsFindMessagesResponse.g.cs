@@ -60,5 +60,6 @@ namespace V0
         public ChatsFindMessagesResponse()
         {
         }
+
     }
 }

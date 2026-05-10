@@ -170,5 +170,6 @@ namespace V0
         public ReportsGetAIUsageResponseDataItem()
         {
         }
+
     }
 }

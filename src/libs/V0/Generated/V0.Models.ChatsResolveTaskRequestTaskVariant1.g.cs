@@ -92,5 +92,6 @@ namespace V0
         public ChatsResolveTaskRequestTaskVariant1()
         {
         }
+
     }
 }
