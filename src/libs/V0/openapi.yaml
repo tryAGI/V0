@@ -7247,6 +7247,7 @@ components:
               enum:
                 - v0-auto
                 - v0-opus-4.7
+                - v0-opus-4.7-fast
                 - v0-mini
                 - v0-pro
                 - v0-max

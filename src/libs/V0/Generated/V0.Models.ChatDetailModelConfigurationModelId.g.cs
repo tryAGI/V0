@@ -32,6 +32,10 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
+        V0Opus47Fast,
+        /// <summary>
+        /// 
+        /// </summary>
         V0Pro,
     }
 
@@ -52,6 +56,7 @@ namespace V0
                 ChatDetailModelConfigurationModelId.V0MaxFast => "v0-max-fast",
                 ChatDetailModelConfigurationModelId.V0Mini => "v0-mini",
                 ChatDetailModelConfigurationModelId.V0Opus47 => "v0-opus-4.7",
+                ChatDetailModelConfigurationModelId.V0Opus47Fast => "v0-opus-4.7-fast",
                 ChatDetailModelConfigurationModelId.V0Pro => "v0-pro",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -68,6 +73,7 @@ namespace V0
                 "v0-max-fast" => ChatDetailModelConfigurationModelId.V0MaxFast,
                 "v0-mini" => ChatDetailModelConfigurationModelId.V0Mini,
                 "v0-opus-4.7" => ChatDetailModelConfigurationModelId.V0Opus47,
+                "v0-opus-4.7-fast" => ChatDetailModelConfigurationModelId.V0Opus47Fast,
                 "v0-pro" => ChatDetailModelConfigurationModelId.V0Pro,
                 _ => null,
             };
