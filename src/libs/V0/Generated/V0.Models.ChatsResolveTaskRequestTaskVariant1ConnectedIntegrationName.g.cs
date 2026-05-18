@@ -47,10 +47,6 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        Groq,
-        /// <summary>
-        /// 
-        /// </summary>
         Neon,
         /// <summary>
         /// 
@@ -107,7 +103,6 @@ namespace V0
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.DeepInfra => "Deep Infra",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.EdgeConfig => "Edge Config",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Grok => "Grok",
-                ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Groq => "Groq",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Neon => "Neon",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Snowflake => "Snowflake",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Stripe => "Stripe",
@@ -136,7 +131,6 @@ namespace V0
                 "Deep Infra" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.DeepInfra,
                 "Edge Config" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.EdgeConfig,
                 "Grok" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Grok,
-                "Groq" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Groq,
                 "Neon" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Neon,
                 "Snowflake" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Snowflake,
                 "Stripe" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Stripe,
