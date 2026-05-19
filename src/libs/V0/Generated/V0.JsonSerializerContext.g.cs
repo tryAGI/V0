@@ -253,6 +253,14 @@ namespace V0
 
             typeof(global::V0.JsonConverters.ProjectsGetEnvVarDecryptedNullableJsonConverter),
 
+            typeof(global::V0.JsonConverters.ChatsFindResponseDataItemPrivacyJsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatsFindResponseDataItemPrivacyNullableJsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatsFindResponseDataItemLatestVersionStatusJsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatsFindResponseDataItemLatestVersionStatusNullableJsonConverter),
+
             typeof(global::V0.JsonConverters.DeploymentsFindLogsResponseLogTypeJsonConverter),
 
             typeof(global::V0.JsonConverters.DeploymentsFindLogsResponseLogTypeNullableJsonConverter),
@@ -567,7 +575,11 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProjectsGetEnvVarDecrypted), TypeInfoPropertyName = "ProjectsGetEnvVarDecrypted2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsFindResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.ChatSummary>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.ChatsFindResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsFindResponseDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsFindResponseDataItemPrivacy), TypeInfoPropertyName = "ChatsFindResponseDataItemPrivacy2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsFindResponseDataItemLatestVersion))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsFindResponseDataItemLatestVersionStatus), TypeInfoPropertyName = "ChatsFindResponseDataItemLatestVersionStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsDeleteResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsFavoriteResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsFindMessagesResponse))]
@@ -695,7 +707,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::V0.ProjectsCreateRequestEnvironmentVariable>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::V0.ProjectsCreateEnvVarsRequestEnvironmentVariable>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::V0.ProjectsUpdateEnvVarsRequestEnvironmentVariable>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::V0.ChatSummary>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::V0.ChatsFindResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::V0.MessageSummary>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::V0.VersionSummary>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::V0.DeploymentDetail>))]

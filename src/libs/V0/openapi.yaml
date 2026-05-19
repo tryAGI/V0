@@ -200,7 +200,115 @@ paths:
                   data:
                     type: array
                     items:
-                      $ref: "#/components/schemas/ChatSummary"
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          description: A unique identifier for the chat.
+                        object:
+                          type: string
+                          const: chat
+                          description: Fixed value identifying this object as a chat.
+                        shareable:
+                          type: boolean
+                          description: Indicates whether the chat can be shared via public link.
+                        privacy:
+                          type: string
+                          enum:
+                            - public
+                            - private
+                            - team
+                            - team-edit
+                            - unlisted
+                          description: Defines the visibility of the chat—private, team-only, or public.
+                        name:
+                          description: An optional name assigned to the chat by the user.
+                          type: string
+                        title:
+                          type: string
+                          description: Deprecated title field preserved for backward compatibility.
+                          deprecated: true
+                        createdAt:
+                          type: string
+                          format: date-time
+                          pattern: ^(?:(?:\d\d[2468][048]|\d\d[13579][26]|\d\d0[48]|[02468][048]00|[13579][26]00)-02-29|\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\d|30)|(?:02)-(?:0[1-9]|1\d|2[0-8])))T(?:(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d(?:\.\d+)?)?(?:Z))$
+                          description: The ISO timestamp representing when the chat was created.
+                        updatedAt:
+                          description: The ISO timestamp of the last update to the chat.
+                          type: string
+                        favorite:
+                          type: boolean
+                          description: Indicates whether the chat is marked as a favorite.
+                        authorId:
+                          type: string
+                          description: The ID of the user who created the chat.
+                        projectId:
+                          description: Optional ID of the v0 project associated with this chat.
+                          type: string
+                        vercelProjectId:
+                          description: Optional ID of the linked Vercel project, if connected.
+                          type: string
+                        webUrl:
+                          type: string
+                          description: Web URL to view this chat in the browser.
+                        apiUrl:
+                          type: string
+                          description: API URL to access this chat via the API.
+                        latestVersion:
+                          description: The most recent generated version of the chat, if available.
+                          type: object
+                          properties:
+                            id:
+                              type: string
+                              description: A unique identifier for the version.
+                            object:
+                              type: string
+                              const: version
+                              description: Fixed value identifying this object as a version.
+                            status:
+                              type: string
+                              enum:
+                                - pending
+                                - completed
+                                - failed
+                              description: The current status of the version generation process.
+                            demoUrl:
+                              description: Optional URL for previewing the generated output.
+                              type: string
+                            screenshotUrl:
+                              type: string
+                              description: URL to retrieve a screenshot of this version.
+                            createdAt:
+                              type: string
+                              format: date-time
+                              pattern: ^(?:(?:\d\d[2468][048]|\d\d[13579][26]|\d\d0[48]|[02468][048]00|[13579][26]00)-02-29|\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\d|30)|(?:02)-(?:0[1-9]|1\d|2[0-8])))T(?:(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d(?:\.\d+)?)?(?:Z))$
+                              description: The date and time when the version was created, in ISO 8601 format.
+                            updatedAt:
+                              description: The date and time when the version was last updated, in ISO 8601 format.
+                              type: string
+                              format: date-time
+                              pattern: ^(?:(?:\d\d[2468][048]|\d\d[13579][26]|\d\d0[48]|[02468][048]00|[13579][26]00)-02-29|\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\d|30)|(?:02)-(?:0[1-9]|1\d|2[0-8])))T(?:(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d(?:\.\d+)?)?(?:Z))$
+                            darkScreenshotUrl:
+                              type: string
+                              description: URL to retrieve a dark mode screenshot of this version.
+                          required:
+                            - id
+                            - object
+                            - status
+                            - createdAt
+                          additionalProperties: false
+                      required:
+                        - id
+                        - object
+                        - shareable
+                        - privacy
+                        - createdAt
+                        - favorite
+                        - authorId
+                        - webUrl
+                        - apiUrl
+                      additionalProperties: false
+                      description: Summary of a chat, including metadata like privacy, author, latest version, and URLs.
                 required:
                   - object
                   - data
