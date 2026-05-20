@@ -51,6 +51,10 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
+        Shopify,
+        /// <summary>
+        /// 
+        /// </summary>
         Snowflake,
         /// <summary>
         /// 
@@ -104,6 +108,7 @@ namespace V0
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.EdgeConfig => "Edge Config",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Grok => "Grok",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Neon => "Neon",
+                ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Shopify => "Shopify",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Snowflake => "Snowflake",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Stripe => "Stripe",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Supabase => "Supabase",
@@ -132,6 +137,7 @@ namespace V0
                 "Edge Config" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.EdgeConfig,
                 "Grok" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Grok,
                 "Neon" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Neon,
+                "Shopify" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Shopify,
                 "Snowflake" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Snowflake,
                 "Stripe" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Stripe,
                 "Supabase" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Supabase,
