@@ -2221,6 +2221,7 @@ paths:
                               - Stripe
                               - Clerk
                               - Convex
+                              - Shopify
                               - Blob
                               - Edge Config
                               - Vercel AI Gateway
