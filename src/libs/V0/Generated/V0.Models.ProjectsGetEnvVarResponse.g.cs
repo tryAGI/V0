@@ -52,5 +52,18 @@ namespace V0
         public ProjectsGetEnvVarResponse()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ProjectsGetEnvVarResponse"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ProjectsGetEnvVarResponse FromData(global::V0.EnvironmentVariableDetailSchema data)
+        {
+            return new ProjectsGetEnvVarResponse
+            {
+                Data = data,
+            };
+        }
+
     }
 }

@@ -66,5 +66,18 @@ namespace V0
         public ProjectsDeleteResponse()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ProjectsDeleteResponse"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ProjectsDeleteResponse FromId(string id)
+        {
+            return new ProjectsDeleteResponse
+            {
+                Id = id,
+            };
+        }
+
     }
 }

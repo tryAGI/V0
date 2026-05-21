@@ -43,7 +43,7 @@ namespace V0
         /// <summary>
         /// Chats.
         /// </summary>
-        public ChatsClient Chats => new ChatsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ChatsClient Chats => new ChatsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -52,7 +52,7 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public DeploymentsClient Deployments => new DeploymentsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public DeploymentsClient Deployments => new DeploymentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -61,7 +61,7 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public HooksClient Hooks => new HooksClient(HttpClient, authorizations: Authorizations, options: Options)
+        public HooksClient Hooks => new HooksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -70,7 +70,7 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public IntegrationsClient Integrations => new IntegrationsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public IntegrationsClient Integrations => new IntegrationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -79,7 +79,7 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public McpServersClient McpServers => new McpServersClient(HttpClient, authorizations: Authorizations, options: Options)
+        public McpServersClient McpServers => new McpServersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -88,7 +88,7 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public ProjectsClient Projects => new ProjectsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ProjectsClient Projects => new ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -97,7 +97,7 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public RateLimitsClient RateLimits => new RateLimitsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public RateLimitsClient RateLimits => new RateLimitsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -106,7 +106,7 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public ReportsClient Reports => new ReportsClient(HttpClient, authorizations: Authorizations, options: Options)
+        public ReportsClient Reports => new ReportsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -115,7 +115,7 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public UserClient User => new UserClient(HttpClient, authorizations: Authorizations, options: Options)
+        public UserClient User => new UserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContext = JsonSerializerContext,
@@ -144,6 +144,27 @@ namespace V0
         }
 
         /// <summary>
+        /// Creates a new instance of the V0Client with explicit options but no base URL override.
+        /// Skips passing <c>baseUri</c> so the default base URL from the OpenAPI spec applies.
+        /// </summary>
+        /// <param name="httpClient">The HttpClient instance. If not provided, a new one will be created.</param>
+        /// <param name="authorizations">The authorizations to use for the requests.</param>
+        /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
+        /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
+        public V0Client(
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Collections.Generic.List<global::V0.EndPointAuthorization>? authorizations,
+            global::V0.AutoSDKClientOptions? options,
+            bool disposeHttpClient = true) : this(
+                httpClient,
+                baseUri: null,
+                authorizations,
+                options,
+                disposeHttpClient: disposeHttpClient)
+        {
+        }
+
+        /// <summary>
         /// Creates a new instance of the V0Client.
         /// If no httpClient is provided, a new one will be created.
         /// If no baseUri is provided, the default baseUri from OpenAPI spec will be used.
@@ -154,10 +175,10 @@ namespace V0
         /// <param name="options">Client-wide request defaults such as headers, query parameters, retries, and timeout.</param>
         /// <param name="disposeHttpClient">Dispose the HttpClient when the instance is disposed. True by default.</param>
         public V0Client(
-            global::System.Net.Http.HttpClient? httpClient = null,
-            global::System.Uri? baseUri = null,
-            global::System.Collections.Generic.List<global::V0.EndPointAuthorization>? authorizations = null,
-            global::V0.AutoSDKClientOptions? options = null,
+            global::System.Net.Http.HttpClient? httpClient,
+            global::System.Uri? baseUri,
+            global::System.Collections.Generic.List<global::V0.EndPointAuthorization>? authorizations,
+            global::V0.AutoSDKClientOptions? options,
             bool disposeHttpClient = true)
         {
 

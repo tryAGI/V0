@@ -50,5 +50,18 @@ namespace V0
         public UnprocessableEntityErrorError()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="UnprocessableEntityErrorError"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static UnprocessableEntityErrorError FromMessage(string message)
+        {
+            return new UnprocessableEntityErrorError
+            {
+                Message = message,
+            };
+        }
+
     }
 }

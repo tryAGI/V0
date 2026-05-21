@@ -47,11 +47,11 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        Groq,
+        Neon,
         /// <summary>
         /// 
         /// </summary>
-        Neon,
+        Shopify,
         /// <summary>
         /// 
         /// </summary>
@@ -107,8 +107,8 @@ namespace V0
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.DeepInfra => "Deep Infra",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.EdgeConfig => "Edge Config",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Grok => "Grok",
-                ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Groq => "Groq",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Neon => "Neon",
+                ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Shopify => "Shopify",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Snowflake => "Snowflake",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Stripe => "Stripe",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Supabase => "Supabase",
@@ -136,8 +136,8 @@ namespace V0
                 "Deep Infra" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.DeepInfra,
                 "Edge Config" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.EdgeConfig,
                 "Grok" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Grok,
-                "Groq" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Groq,
                 "Neon" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Neon,
+                "Shopify" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Shopify,
                 "Snowflake" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Snowflake,
                 "Stripe" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Stripe,
                 "Supabase" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Supabase,

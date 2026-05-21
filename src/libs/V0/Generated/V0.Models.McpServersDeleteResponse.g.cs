@@ -64,5 +64,18 @@ namespace V0
         public McpServersDeleteResponse()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="McpServersDeleteResponse"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static McpServersDeleteResponse FromId(string id)
+        {
+            return new McpServersDeleteResponse
+            {
+                Id = id,
+            };
+        }
+
     }
 }

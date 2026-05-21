@@ -60,5 +60,18 @@ namespace V0
         public ProjectsAssignResponse()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ProjectsAssignResponse"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ProjectsAssignResponse FromId(string id)
+        {
+            return new ProjectsAssignResponse
+            {
+                Id = id,
+            };
+        }
+
     }
 }

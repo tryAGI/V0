@@ -60,5 +60,18 @@ namespace V0
         public DeploymentsDeleteResponse()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="DeploymentsDeleteResponse"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static DeploymentsDeleteResponse FromId(string id)
+        {
+            return new DeploymentsDeleteResponse
+            {
+                Id = id,
+            };
+        }
+
     }
 }

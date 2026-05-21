@@ -50,5 +50,18 @@ namespace V0
         public UserGetBillingResponseVariant1()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="UserGetBillingResponseVariant1"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static UserGetBillingResponseVariant1 FromData(global::V0.UserGetBillingResponseVariant1Data data)
+        {
+            return new UserGetBillingResponseVariant1
+            {
+                Data = data,
+            };
+        }
+
     }
 }

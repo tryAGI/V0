@@ -18,5 +18,19 @@ namespace V0
             string versionId,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// Restore Block<br/>
+        /// Restores a block to a specific version.
+        /// </summary>
+        /// <param name="chatId"></param>
+        /// <param name="versionId"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::V0.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::V0.AutoSDKHttpResponse<global::V0.VersionDetail>> ChatsRestoreAsResponseAsync(
+            string chatId,
+            string versionId,
+            global::V0.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
     }
 }

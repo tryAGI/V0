@@ -112,5 +112,6 @@ namespace V0
         public ChatSummaryLatestVersion()
         {
         }
+
     }
 }

@@ -78,5 +78,6 @@ namespace V0
         public IntegrationConnectionSummarySchema()
         {
         }
+
     }
 }

@@ -123,5 +123,6 @@ namespace V0
         public ReportsGetUserActivityResponseDataItemUser()
         {
         }
+
     }
 }

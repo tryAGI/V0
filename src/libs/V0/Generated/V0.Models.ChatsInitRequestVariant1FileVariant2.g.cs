@@ -61,5 +61,6 @@ namespace V0
         public ChatsInitRequestVariant1FileVariant2()
         {
         }
+
     }
 }

@@ -203,5 +203,6 @@ namespace V0
         public ChatSummary()
         {
         }
+
     }
 }

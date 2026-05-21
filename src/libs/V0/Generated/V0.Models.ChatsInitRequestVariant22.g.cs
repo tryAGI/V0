@@ -65,5 +65,18 @@ namespace V0
         public ChatsInitRequestVariant22()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="ChatsInitRequestVariant22"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static ChatsInitRequestVariant22 FromRepo(global::V0.ChatsInitRequestVariant2Repo repo)
+        {
+            return new ChatsInitRequestVariant22
+            {
+                Repo = repo,
+            };
+        }
+
     }
 }

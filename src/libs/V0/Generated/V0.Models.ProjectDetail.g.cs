@@ -171,5 +171,6 @@ namespace V0
         public ProjectDetail()
         {
         }
+
     }
 }

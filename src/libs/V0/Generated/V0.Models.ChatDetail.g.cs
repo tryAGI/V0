@@ -290,5 +290,6 @@ namespace V0
         public ChatDetail()
         {
         }
+
     }
 }

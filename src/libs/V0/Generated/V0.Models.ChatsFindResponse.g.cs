@@ -20,7 +20,7 @@ namespace V0
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::V0.ChatSummary> Data { get; set; }
+        public required global::System.Collections.Generic.IList<global::V0.ChatsFindResponseDataItem> Data { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,7 +37,7 @@ namespace V0
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatsFindResponse(
-            global::System.Collections.Generic.IList<global::V0.ChatSummary> data,
+            global::System.Collections.Generic.IList<global::V0.ChatsFindResponseDataItem> data,
             string @object = "list")
         {
             this.Object = @object;
@@ -50,5 +50,6 @@ namespace V0
         public ChatsFindResponse()
         {
         }
+
     }
 }

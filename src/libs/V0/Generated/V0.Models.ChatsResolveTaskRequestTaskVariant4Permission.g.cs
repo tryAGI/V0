@@ -97,5 +97,6 @@ namespace V0
         public ChatsResolveTaskRequestTaskVariant4Permission()
         {
         }
+
     }
 }

@@ -54,5 +54,18 @@ namespace V0
         public McpServersUpdateRequestAuthVariant2()
         {
         }
+
+        /// <summary>
+        /// Creates a new <see cref="McpServersUpdateRequestAuthVariant2"/> from its single non-const required field,
+        /// hardcoding any const discriminator fields.
+        /// </summary>
+        public static McpServersUpdateRequestAuthVariant2 FromToken(string token)
+        {
+            return new McpServersUpdateRequestAuthVariant2
+            {
+                Token = token,
+            };
+        }
+
     }
 }

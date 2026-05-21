@@ -40,8 +40,7 @@ namespace V0
         /// The ID of the project that this deployment is scoped to.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public string? ProjectId { get; set; }
 
         /// <summary>
         /// The ID of the version that this deployment is scoped to.
@@ -82,9 +81,6 @@ namespace V0
         /// <param name="chatId">
         /// The ID of the chat that this deployment is scoped to.
         /// </param>
-        /// <param name="projectId">
-        /// The ID of the project that this deployment is scoped to.
-        /// </param>
         /// <param name="versionId">
         /// The ID of the version that this deployment is scoped to.
         /// </param>
@@ -93,6 +89,9 @@ namespace V0
         /// </param>
         /// <param name="webUrl">
         /// The web URL where the deployment can be viewed or managed.
+        /// </param>
+        /// <param name="projectId">
+        /// The ID of the project that this deployment is scoped to.
         /// </param>
         /// <param name="object">
         /// Fixed value identifying this object as a deployment.
@@ -104,17 +103,17 @@ namespace V0
             string id,
             string inspectorUrl,
             string chatId,
-            string projectId,
             string versionId,
             string apiUrl,
             string webUrl,
+            string? projectId,
             string @object = "deployment")
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Object = @object;
             this.InspectorUrl = inspectorUrl ?? throw new global::System.ArgumentNullException(nameof(inspectorUrl));
             this.ChatId = chatId ?? throw new global::System.ArgumentNullException(nameof(chatId));
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectId = projectId;
             this.VersionId = versionId ?? throw new global::System.ArgumentNullException(nameof(versionId));
             this.ApiUrl = apiUrl ?? throw new global::System.ArgumentNullException(nameof(apiUrl));
             this.WebUrl = webUrl ?? throw new global::System.ArgumentNullException(nameof(webUrl));
@@ -126,5 +125,6 @@ namespace V0
         public DeploymentDetail()
         {
         }
+
     }
 }
