@@ -2021,7 +2021,7 @@ paths:
   /chats/{chatId}/messages/{messageId}/resume:
     post:
       summary: Resume Message
-      description: Resumes processing of a previously interrupted or incomplete message in a chat. Useful for continuing generation when a message was paused or stopped.
+      description: Reconnects to an active assistant message stream and returns it as Server-Sent Events. This does not restart or continue a stopped generation.
       operationId: chats.resume
       tags:
         - chats
@@ -2029,9 +2029,10 @@ paths:
         "200":
           description: Success
           content:
-            application/json:
+            text/event-stream:
               schema:
-                $ref: "#/components/schemas/MessageDetail"
+                type: string
+                description: A Server-Sent Events stream of chat and message delta events.
         "401":
           description: Unauthorized
           content:
