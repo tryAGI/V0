@@ -7351,7 +7351,6 @@ components:
           properties:
             modelId:
               default: v0-pro
-              description: Model to use for the generation.
               type: string
               enum:
                 - v0-auto
@@ -7361,6 +7360,7 @@ components:
                 - v0-pro
                 - v0-max
                 - v0-max-fast
+              description: Model to use for the generation.
             imageGenerations:
               default: false
               type: boolean
