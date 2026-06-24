@@ -2223,6 +2223,7 @@ paths:
                               - Clerk
                               - Convex
                               - Shopify
+                              - Resend email
                               - Blob
                               - Edge Config
                               - Vercel AI Gateway
