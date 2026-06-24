@@ -11,9 +11,9 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"confirmed-permissions"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "confirmed-permissions";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant4TypeJsonConverter))]
+        public global::V0.ChatsResolveTaskRequestTaskVariant4Type Type { get; set; }
 
         /// <summary>
         /// The permissions to grant. Pass the suggestedPermissions from the stopped task.
@@ -40,17 +40,17 @@ namespace V0
         /// <param name="permissions">
         /// The permissions to grant. Pass the suggestedPermissions from the stopped task.
         /// </param>
+        /// <param name="type"></param>
         /// <param name="userMessage">
         /// Optional message from the user about the permission grant.
         /// </param>
-        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatsResolveTaskRequestTaskVariant4(
             global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant4Permission> permissions,
-            string? userMessage,
-            string type = "confirmed-permissions")
+            global::V0.ChatsResolveTaskRequestTaskVariant4Type type,
+            string? userMessage)
         {
             this.Type = type;
             this.Permissions = permissions ?? throw new global::System.ArgumentNullException(nameof(permissions));

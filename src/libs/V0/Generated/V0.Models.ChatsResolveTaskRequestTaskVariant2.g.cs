@@ -11,9 +11,9 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"plan-exit-response"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "plan-exit-response";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant2TypeJsonConverter))]
+        public global::V0.ChatsResolveTaskRequestTaskVariant2Type Type { get; set; }
 
         /// <summary>
         /// Whether the plan is approved, rejected, or needs changes.
@@ -52,7 +52,7 @@ namespace V0
         public ChatsResolveTaskRequestTaskVariant2(
             global::V0.ChatsResolveTaskRequestTaskVariant2Status status,
             string content,
-            string type = "plan-exit-response")
+            global::V0.ChatsResolveTaskRequestTaskVariant2Type type)
         {
             this.Type = type;
             this.Status = status;

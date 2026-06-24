@@ -11,9 +11,9 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"confirmed-steps"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "confirmed-steps";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant1TypeJsonConverter))]
+        public global::V0.ChatsResolveTaskRequestTaskVariant1Type Type { get; set; }
 
         /// <summary>
         /// Names of integrations that were successfully connected (e.g. "Neon", "Supabase"). Pass an empty array to skip.<br/>
@@ -52,6 +52,7 @@ namespace V0
         /// <summary>
         /// Initializes a new instance of the <see cref="ChatsResolveTaskRequestTaskVariant1" /> class.
         /// </summary>
+        /// <param name="type"></param>
         /// <param name="connectedIntegrationNames">
         /// Names of integrations that were successfully connected (e.g. "Neon", "Supabase"). Pass an empty array to skip.<br/>
         /// Default Value: []
@@ -68,16 +69,15 @@ namespace V0
         /// Names of environment variables that were added.<br/>
         /// Default Value: []
         /// </param>
-        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatsResolveTaskRequestTaskVariant1(
+            global::V0.ChatsResolveTaskRequestTaskVariant1Type type,
             global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName>? connectedIntegrationNames,
             global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName>? connectedMcpPresetNames,
             global::System.Collections.Generic.IList<string>? appliedScripts,
-            global::System.Collections.Generic.IList<string>? addedEnvVars,
-            string type = "confirmed-steps")
+            global::System.Collections.Generic.IList<string>? addedEnvVars)
         {
             this.Type = type;
             this.ConnectedIntegrationNames = connectedIntegrationNames;
