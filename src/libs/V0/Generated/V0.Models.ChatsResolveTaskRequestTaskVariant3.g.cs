@@ -11,9 +11,9 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"answered-questions"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "answered-questions";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant3TypeJsonConverter))]
+        public global::V0.ChatsResolveTaskRequestTaskVariant3Type Type { get; set; }
 
         /// <summary>
         /// Answers to the questions the agent asked.
@@ -40,7 +40,7 @@ namespace V0
 #endif
         public ChatsResolveTaskRequestTaskVariant3(
             global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant3Answer> answers,
-            string type = "answered-questions")
+            global::V0.ChatsResolveTaskRequestTaskVariant3Type type)
         {
             this.Type = type;
             this.Answers = answers ?? throw new global::System.ArgumentNullException(nameof(answers));

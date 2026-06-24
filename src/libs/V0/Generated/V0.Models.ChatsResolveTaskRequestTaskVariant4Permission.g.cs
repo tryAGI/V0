@@ -11,9 +11,9 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        /// <default>"ALLOW_DYNAMIC_TOOL_STRICT"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string Type { get; set; } = "ALLOW_DYNAMIC_TOOL_STRICT";
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant4PermissionTypeJsonConverter))]
+        public global::V0.ChatsResolveTaskRequestTaskVariant4PermissionType Type { get; set; }
 
         /// <summary>
         /// The name of the tool being permitted.
@@ -62,6 +62,7 @@ namespace V0
         /// <param name="input">
         /// The tool call input arguments. Pass the exact input from the stopped task.
         /// </param>
+        /// <param name="type"></param>
         /// <param name="taskNameActive">
         /// Label shown while the tool is running (e.g. "Running migration").
         /// </param>
@@ -71,17 +72,16 @@ namespace V0
         /// <param name="userMessage">
         /// Optional message from the user about this permission.
         /// </param>
-        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatsResolveTaskRequestTaskVariant4Permission(
             string toolName,
             object input,
+            global::V0.ChatsResolveTaskRequestTaskVariant4PermissionType type,
             string? taskNameActive,
             string? taskNameComplete,
-            string? userMessage,
-            string type = "ALLOW_DYNAMIC_TOOL_STRICT")
+            string? userMessage)
         {
             this.Type = type;
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));

@@ -2200,7 +2200,8 @@ paths:
                       properties:
                         type:
                           type: string
-                          const: confirmed-steps
+                          enum:
+                            - confirmed-steps
                         connectedIntegrationNames:
                           default: []
                           description: Names of integrations that were successfully connected (e.g. "Neon", "Supabase"). Pass an empty array to skip.
@@ -2269,7 +2270,8 @@ paths:
                       properties:
                         type:
                           type: string
-                          const: plan-exit-response
+                          enum:
+                            - plan-exit-response
                         status:
                           type: string
                           enum:
@@ -2291,7 +2293,8 @@ paths:
                       properties:
                         type:
                           type: string
-                          const: answered-questions
+                          enum:
+                            - answered-questions
                         answers:
                           type: array
                           items:
@@ -2330,7 +2333,8 @@ paths:
                       properties:
                         type:
                           type: string
-                          const: confirmed-permissions
+                          enum:
+                            - confirmed-permissions
                         permissions:
                           type: array
                           items:
@@ -2338,7 +2342,8 @@ paths:
                             properties:
                               type:
                                 type: string
-                                const: ALLOW_DYNAMIC_TOOL_STRICT
+                                enum:
+                                  - ALLOW_DYNAMIC_TOOL_STRICT
                               toolName:
                                 type: string
                                 minLength: 1
