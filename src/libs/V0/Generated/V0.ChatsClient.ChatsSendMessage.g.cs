@@ -767,7 +767,10 @@ namespace V0
         /// Array of MCP server IDs to enable for this message. When provided, only the specified servers will be used. When omitted, falls back to the user's enabled MCP servers.
         /// </param>
         /// <param name="attachedSkillIds">
-        /// Array of skill IDs (from skills.sh) to attach to this message. Skills provide domain-specific knowledge and instructions that guide the AI. Maximum 3 skills per chat.
+        /// Array of skill IDs (from skills.sh) to attach to this message. Backwards-compatible alias for `skills` entries of type `remote`. Maximum 3 skills per chat.
+        /// </param>
+        /// <param name="skills">
+        /// Skills to force-attach to this message. Supports skills.sh (`remote`), user/team memory (`memory`), and project (`project`) skills. Merged with `attachedSkillIds`. Maximum 3 skills per chat.
         /// </param>
         /// <param name="action">
         /// An optional action to perform. Use `fix-with-v0` to trigger automatic error fixing — the message should contain the error logs or context to fix.
@@ -784,6 +787,7 @@ namespace V0
             global::V0.ChatsSendMessageRequestResponseMode? responseMode = default,
             global::System.Collections.Generic.IList<string>? mcpServerIds = default,
             global::System.Collections.Generic.IList<string>? attachedSkillIds = default,
+            global::System.Collections.Generic.IList<global::V0.AnyOf<global::V0.ChatsSendMessageRequestSkillVariant1, global::V0.ChatsSendMessageRequestSkillVariant2, global::V0.ChatsSendMessageRequestSkillVariant3>>? skills = default,
             global::V0.ChatsSendMessageRequestAction? action = default,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -797,6 +801,7 @@ namespace V0
                 ResponseMode = responseMode,
                 McpServerIds = mcpServerIds,
                 AttachedSkillIds = attachedSkillIds,
+                Skills = skills,
                 Action = action,
             };
 

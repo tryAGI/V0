@@ -105,10 +105,65 @@ paths:
                   items:
                     type: string
                 attachedSkillIds:
-                  description: Array of skill IDs (from skills.sh) to attach to this chat. Skills provide domain-specific knowledge and instructions that guide the AI. Maximum 3 skills per chat.
+                  description: Array of skill IDs (from skills.sh) to attach to this chat. Backwards-compatible alias for `skills` entries of type `remote`. Maximum 3 skills per chat.
                   type: array
                   items:
                     type: string
+                skills:
+                  description: Skills to force-attach to this chat. Supports skills.sh (`remote`), user/team memory (`memory`), and project (`project`) skills. Merged with `attachedSkillIds`. Maximum 3 skills per chat.
+                  type: array
+                  items:
+                    anyOf:
+                      - type: object
+                        properties:
+                          type:
+                            type: string
+                            enum:
+                              - remote
+                            description: "Discriminator: a skills.sh skill."
+                          id:
+                            type: string
+                            description: Skill ID from skills.sh.
+                        required:
+                          - type
+                          - id
+                        additionalProperties: false
+                      - type: object
+                        properties:
+                          type:
+                            type: string
+                            enum:
+                              - memory
+                            description: "Discriminator: a user- or team-scoped memory skill."
+                          scope:
+                            type: string
+                            enum:
+                              - user
+                              - team
+                            description: Whether the skill lives in user or team memory.
+                          skillName:
+                            type: string
+                            description: Name of the memory skill to attach.
+                        required:
+                          - type
+                          - scope
+                          - skillName
+                        additionalProperties: false
+                      - type: object
+                        properties:
+                          type:
+                            type: string
+                            enum:
+                              - project
+                            description: "Discriminator: a skill defined in the project repo."
+                          skillName:
+                            type: string
+                            description: Name of the project skill to attach.
+                        required:
+                          - type
+                          - skillName
+                        additionalProperties: false
+                    description: A skill to force-attach to the chat. Skills provide domain-specific knowledge to the AI. Use `remote` for skills.sh skills, `memory` for user/team memory skills (including design-system skills), and `project` for skills defined in the chat repo.
                 metadata:
                   default: {}
                   description: Arbitrary key-value data to attach to the chat. Useful for storing additional data about the chat, such as external user IDs.
@@ -1349,10 +1404,65 @@ paths:
                   items:
                     type: string
                 attachedSkillIds:
-                  description: Array of skill IDs (from skills.sh) to attach to this message. Skills provide domain-specific knowledge and instructions that guide the AI. Maximum 3 skills per chat.
+                  description: Array of skill IDs (from skills.sh) to attach to this message. Backwards-compatible alias for `skills` entries of type `remote`. Maximum 3 skills per chat.
                   type: array
                   items:
                     type: string
+                skills:
+                  description: Skills to force-attach to this message. Supports skills.sh (`remote`), user/team memory (`memory`), and project (`project`) skills. Merged with `attachedSkillIds`. Maximum 3 skills per chat.
+                  type: array
+                  items:
+                    anyOf:
+                      - type: object
+                        properties:
+                          type:
+                            type: string
+                            enum:
+                              - remote
+                            description: "Discriminator: a skills.sh skill."
+                          id:
+                            type: string
+                            description: Skill ID from skills.sh.
+                        required:
+                          - type
+                          - id
+                        additionalProperties: false
+                      - type: object
+                        properties:
+                          type:
+                            type: string
+                            enum:
+                              - memory
+                            description: "Discriminator: a user- or team-scoped memory skill."
+                          scope:
+                            type: string
+                            enum:
+                              - user
+                              - team
+                            description: Whether the skill lives in user or team memory.
+                          skillName:
+                            type: string
+                            description: Name of the memory skill to attach.
+                        required:
+                          - type
+                          - scope
+                          - skillName
+                        additionalProperties: false
+                      - type: object
+                        properties:
+                          type:
+                            type: string
+                            enum:
+                              - project
+                            description: "Discriminator: a skill defined in the project repo."
+                          skillName:
+                            type: string
+                            description: Name of the project skill to attach.
+                        required:
+                          - type
+                          - skillName
+                        additionalProperties: false
+                    description: A skill to force-attach to the chat. Skills provide domain-specific knowledge to the AI. Use `remote` for skills.sh skills, `memory` for user/team memory skills (including design-system skills), and `project` for skills defined in the chat repo.
                 action:
                   description: An optional action to perform. Use `fix-with-v0` to trigger automatic error fixing — the message should contain the error logs or context to fix.
                   type: object
@@ -2229,6 +2339,7 @@ paths:
                               - Edge Config
                               - Vercel AI Gateway
                               - Snowflake
+                              - Figma
                         connectedMcpPresetNames:
                           default: []
                           description: Names of MCP presets that were connected (e.g. "Linear", "Sentry"). Pass an empty array to skip.
