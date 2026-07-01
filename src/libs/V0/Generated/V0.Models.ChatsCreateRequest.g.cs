@@ -71,10 +71,16 @@ namespace V0
         public global::System.Collections.Generic.IList<string>? McpServerIds { get; set; }
 
         /// <summary>
-        /// Array of skill IDs (from skills.sh) to attach to this chat. Skills provide domain-specific knowledge and instructions that guide the AI. Maximum 3 skills per chat.
+        /// Array of skill IDs (from skills.sh) to attach to this chat. Backwards-compatible alias for `skills` entries of type `remote`. Maximum 3 skills per chat.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attachedSkillIds")]
         public global::System.Collections.Generic.IList<string>? AttachedSkillIds { get; set; }
+
+        /// <summary>
+        /// Skills to force-attach to this chat. Supports skills.sh (`remote`), user/team memory (`memory`), and project (`project`) skills. Merged with `attachedSkillIds`. Maximum 3 skills per chat.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("skills")]
+        public global::System.Collections.Generic.IList<global::V0.AnyOf<global::V0.ChatsCreateRequestSkillVariant1, global::V0.ChatsCreateRequestSkillVariant2, global::V0.ChatsCreateRequestSkillVariant3>>? Skills { get; set; }
 
         /// <summary>
         /// Arbitrary key-value data to attach to the chat. Useful for storing additional data about the chat, such as external user IDs.<br/>
@@ -125,7 +131,10 @@ namespace V0
         /// Array of MCP server IDs to enable for this chat. When provided, only the specified servers will be used. When omitted, falls back to the user's enabled MCP servers.
         /// </param>
         /// <param name="attachedSkillIds">
-        /// Array of skill IDs (from skills.sh) to attach to this chat. Skills provide domain-specific knowledge and instructions that guide the AI. Maximum 3 skills per chat.
+        /// Array of skill IDs (from skills.sh) to attach to this chat. Backwards-compatible alias for `skills` entries of type `remote`. Maximum 3 skills per chat.
+        /// </param>
+        /// <param name="skills">
+        /// Skills to force-attach to this chat. Supports skills.sh (`remote`), user/team memory (`memory`), and project (`project`) skills. Merged with `attachedSkillIds`. Maximum 3 skills per chat.
         /// </param>
         /// <param name="metadata">
         /// Arbitrary key-value data to attach to the chat. Useful for storing additional data about the chat, such as external user IDs.<br/>
@@ -145,6 +154,7 @@ namespace V0
             string? designSystemId,
             global::System.Collections.Generic.IList<string>? mcpServerIds,
             global::System.Collections.Generic.IList<string>? attachedSkillIds,
+            global::System.Collections.Generic.IList<global::V0.AnyOf<global::V0.ChatsCreateRequestSkillVariant1, global::V0.ChatsCreateRequestSkillVariant2, global::V0.ChatsCreateRequestSkillVariant3>>? skills,
             global::System.Collections.Generic.Dictionary<string, string>? metadata)
         {
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
@@ -157,6 +167,7 @@ namespace V0
             this.DesignSystemId = designSystemId;
             this.McpServerIds = mcpServerIds;
             this.AttachedSkillIds = attachedSkillIds;
+            this.Skills = skills;
             this.Metadata = metadata;
         }
 

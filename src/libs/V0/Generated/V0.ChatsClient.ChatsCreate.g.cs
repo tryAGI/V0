@@ -766,7 +766,10 @@ namespace V0
         /// Array of MCP server IDs to enable for this chat. When provided, only the specified servers will be used. When omitted, falls back to the user's enabled MCP servers.
         /// </param>
         /// <param name="attachedSkillIds">
-        /// Array of skill IDs (from skills.sh) to attach to this chat. Skills provide domain-specific knowledge and instructions that guide the AI. Maximum 3 skills per chat.
+        /// Array of skill IDs (from skills.sh) to attach to this chat. Backwards-compatible alias for `skills` entries of type `remote`. Maximum 3 skills per chat.
+        /// </param>
+        /// <param name="skills">
+        /// Skills to force-attach to this chat. Supports skills.sh (`remote`), user/team memory (`memory`), and project (`project`) skills. Merged with `attachedSkillIds`. Maximum 3 skills per chat.
         /// </param>
         /// <param name="metadata">
         /// Arbitrary key-value data to attach to the chat. Useful for storing additional data about the chat, such as external user IDs.<br/>
@@ -786,6 +789,7 @@ namespace V0
             string? designSystemId = default,
             global::System.Collections.Generic.IList<string>? mcpServerIds = default,
             global::System.Collections.Generic.IList<string>? attachedSkillIds = default,
+            global::System.Collections.Generic.IList<global::V0.AnyOf<global::V0.ChatsCreateRequestSkillVariant1, global::V0.ChatsCreateRequestSkillVariant2, global::V0.ChatsCreateRequestSkillVariant3>>? skills = default,
             global::System.Collections.Generic.Dictionary<string, string>? metadata = default,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -802,6 +806,7 @@ namespace V0
                 DesignSystemId = designSystemId,
                 McpServerIds = mcpServerIds,
                 AttachedSkillIds = attachedSkillIds,
+                Skills = skills,
                 Metadata = metadata,
             };
 

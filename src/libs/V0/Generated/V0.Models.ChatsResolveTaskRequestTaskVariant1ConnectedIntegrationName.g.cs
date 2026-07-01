@@ -43,6 +43,10 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
+        Figma,
+        /// <summary>
+        /// 
+        /// </summary>
         Grok,
         /// <summary>
         /// 
@@ -110,6 +114,7 @@ namespace V0
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Convex => "Convex",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.DeepInfra => "Deep Infra",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.EdgeConfig => "Edge Config",
+                ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Figma => "Figma",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Grok => "Grok",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Neon => "Neon",
                 ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.ResendEmail => "Resend email",
@@ -140,6 +145,7 @@ namespace V0
                 "Convex" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Convex,
                 "Deep Infra" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.DeepInfra,
                 "Edge Config" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.EdgeConfig,
+                "Figma" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Figma,
                 "Grok" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Grok,
                 "Neon" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.Neon,
                 "Resend email" => ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName.ResendEmail,
