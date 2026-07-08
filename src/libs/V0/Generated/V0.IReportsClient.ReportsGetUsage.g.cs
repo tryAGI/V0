@@ -14,7 +14,7 @@ namespace V0
         /// <param name="messageId"></param>
         /// <param name="userId"></param>
         /// <param name="limit">
-        /// Bounds the raw billing transactions scanned per page. Because transactions are rolled up into per-message usage events, a page can occasionally contain more events than this value, and a filtered page (chatId, userId, or messageId) can contain fewer or zero events while more data remains. Always paginate with `pagination.hasMore` and `pagination.nextCursor` rather than stopping on an empty page.<br/>
+        /// Bounds the raw billing transactions scanned per ledger group and page. A page can contain more events than this value (large teams are scanned in parallel ledger groups), and a filtered page (chatId, userId, or messageId) can contain fewer or zero events while more data remains. Events are sorted newest-first within a page but not across pages on large teams. Always paginate with `pagination.hasMore` and `pagination.nextCursor` rather than stopping on an empty page.<br/>
         /// Default Value: 20
         /// </param>
         /// <param name="cursor">
@@ -43,7 +43,7 @@ namespace V0
         /// <param name="messageId"></param>
         /// <param name="userId"></param>
         /// <param name="limit">
-        /// Bounds the raw billing transactions scanned per page. Because transactions are rolled up into per-message usage events, a page can occasionally contain more events than this value, and a filtered page (chatId, userId, or messageId) can contain fewer or zero events while more data remains. Always paginate with `pagination.hasMore` and `pagination.nextCursor` rather than stopping on an empty page.<br/>
+        /// Bounds the raw billing transactions scanned per ledger group and page. A page can contain more events than this value (large teams are scanned in parallel ledger groups), and a filtered page (chatId, userId, or messageId) can contain fewer or zero events while more data remains. Events are sorted newest-first within a page but not across pages on large teams. Always paginate with `pagination.hasMore` and `pagination.nextCursor` rather than stopping on an empty page.<br/>
         /// Default Value: 20
         /// </param>
         /// <param name="cursor">
