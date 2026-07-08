@@ -5633,6 +5633,9 @@ paths:
                           type: number
                         cacheCreationInputTokens:
                           type: number
+                        cacheCreationInputTokens1h:
+                          default: 0
+                          type: number
                         cacheReadInputTokens:
                           type: number
                         timestamp:

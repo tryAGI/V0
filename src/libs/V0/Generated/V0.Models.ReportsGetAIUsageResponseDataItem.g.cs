@@ -51,6 +51,12 @@ namespace V0
         public required double CacheCreationInputTokens { get; set; }
 
         /// <summary>
+        /// Default Value: 0
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cacheCreationInputTokens1h")]
+        public double? CacheCreationInputTokens1h { get; set; }
+
+        /// <summary>
         /// 
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cacheReadInputTokens")]
@@ -129,6 +135,9 @@ namespace V0
         /// <param name="messageId"></param>
         /// <param name="userId"></param>
         /// <param name="userEmail"></param>
+        /// <param name="cacheCreationInputTokens1h">
+        /// Default Value: 0
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -146,7 +155,8 @@ namespace V0
             string chatId,
             string messageId,
             string userId,
-            string userEmail)
+            string userEmail,
+            double? cacheCreationInputTokens1h)
         {
             this.EventId = eventId ?? throw new global::System.ArgumentNullException(nameof(eventId));
             this.ModelId = modelId ?? throw new global::System.ArgumentNullException(nameof(modelId));
@@ -154,6 +164,7 @@ namespace V0
             this.OutputTokens = outputTokens;
             this.TotalTokens = totalTokens;
             this.CacheCreationInputTokens = cacheCreationInputTokens;
+            this.CacheCreationInputTokens1h = cacheCreationInputTokens1h;
             this.CacheReadInputTokens = cacheReadInputTokens;
             this.Timestamp = timestamp ?? throw new global::System.ArgumentNullException(nameof(timestamp));
             this.RequestId = requestId ?? throw new global::System.ArgumentNullException(nameof(requestId));
