@@ -109,6 +109,18 @@ namespace V0
 
             typeof(global::V0.JsonConverters.MessageSummaryListDataItemAttachmentTypeNullableJsonConverter),
 
+            typeof(global::V0.JsonConverters.ProductDetailSchemaV0AvailabilityJsonConverter),
+
+            typeof(global::V0.JsonConverters.ProductDetailSchemaV0AvailabilityNullableJsonConverter),
+
+            typeof(global::V0.JsonConverters.ProductListSchemaDataItemV0AvailabilityJsonConverter),
+
+            typeof(global::V0.JsonConverters.ProductListSchemaDataItemV0AvailabilityNullableJsonConverter),
+
+            typeof(global::V0.JsonConverters.ProductSummarySchemaV0AvailabilityJsonConverter),
+
+            typeof(global::V0.JsonConverters.ProductSummarySchemaV0AvailabilityNullableJsonConverter),
+
             typeof(global::V0.JsonConverters.ProjectDetailPrivacyJsonConverter),
 
             typeof(global::V0.JsonConverters.ProjectDetailPrivacyNullableJsonConverter),
@@ -468,10 +480,13 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.MessageSummaryListPagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.NotificationPreferenceSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProductDetailSchema))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProductDetailSchemaV0Availability), TypeInfoPropertyName = "ProductDetailSchemaV0Availability2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProductListSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.ProductListSchemaDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProductListSchemaDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProductListSchemaDataItemV0Availability), TypeInfoPropertyName = "ProductListSchemaDataItemV0Availability2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProductSummarySchema))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProductSummarySchemaV0Availability), TypeInfoPropertyName = "ProductSummarySchemaV0Availability2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProjectDetail))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ProjectDetailPrivacy), TypeInfoPropertyName = "ProjectDetailPrivacy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.ProjectDetailChat>))]

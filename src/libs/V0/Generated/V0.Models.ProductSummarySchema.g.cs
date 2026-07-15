@@ -51,6 +51,13 @@ namespace V0
         public required string IconUrl { get; set; }
 
         /// <summary>
+        /// The product's availability in v0. 'in-review' products only appear for teams with the review view and should be rendered as such.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("v0Availability")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ProductSummarySchemaV0AvailabilityJsonConverter))]
+        public global::V0.ProductSummarySchemaV0Availability? V0Availability { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -74,6 +81,9 @@ namespace V0
         /// <param name="iconUrl">
         /// URL to the product icon.
         /// </param>
+        /// <param name="v0Availability">
+        /// The product's availability in v0. 'in-review' products only appear for teams with the review view and should be rendered as such.
+        /// </param>
         /// <param name="object">
         /// The object type.
         /// </param>
@@ -86,6 +96,7 @@ namespace V0
             string name,
             string description,
             string iconUrl,
+            global::V0.ProductSummarySchemaV0Availability? v0Availability,
             string @object = "product")
         {
             this.Object = @object;
@@ -94,6 +105,7 @@ namespace V0
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.IconUrl = iconUrl ?? throw new global::System.ArgumentNullException(nameof(iconUrl));
+            this.V0Availability = v0Availability;
         }
 
         /// <summary>
