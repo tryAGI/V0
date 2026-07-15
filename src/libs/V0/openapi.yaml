@@ -9210,6 +9210,12 @@ components:
         iconUrl:
           type: string
           description: URL to the product icon.
+        v0Availability:
+          description: The product's availability in v0. 'in-review' products only appear for teams with the review view and should be rendered as such.
+          type: string
+          enum:
+            - in-review
+            - published
         iconBackgroundColor:
           description: Background color for the product icon.
           type: string
@@ -9253,6 +9259,12 @@ components:
               iconUrl:
                 type: string
                 description: URL to the product icon.
+              v0Availability:
+                description: The product's availability in v0. 'in-review' products only appear for teams with the review view and should be rendered as such.
+                type: string
+                enum:
+                  - in-review
+                  - published
             required:
               - object
               - id
@@ -9290,6 +9302,12 @@ components:
         iconUrl:
           type: string
           description: URL to the product icon.
+        v0Availability:
+          description: The product's availability in v0. 'in-review' products only appear for teams with the review view and should be rendered as such.
+          type: string
+          enum:
+            - in-review
+            - published
       required:
         - object
         - id
