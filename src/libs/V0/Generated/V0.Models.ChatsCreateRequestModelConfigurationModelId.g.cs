@@ -4,7 +4,7 @@
 namespace V0
 {
     /// <summary>
-    /// Model to use for the generation.<br/>
+    /// Model to use for the generation. `v0-auto` is deprecated and falls back to `v0-pro`.<br/>
     /// Default Value: v0-pro
     /// </summary>
     public enum ChatsCreateRequestModelConfigurationModelId
