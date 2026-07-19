@@ -9,7 +9,7 @@ namespace V0
     public sealed partial class ChatsCreateRequestModelConfiguration
     {
         /// <summary>
-        /// Model to use for the generation.<br/>
+        /// Model to use for the generation. `v0-auto` is deprecated and falls back to `v0-pro`.<br/>
         /// Default Value: v0-pro
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("modelId")]
@@ -40,7 +40,7 @@ namespace V0
         /// Initializes a new instance of the <see cref="ChatsCreateRequestModelConfiguration" /> class.
         /// </summary>
         /// <param name="modelId">
-        /// Model to use for the generation.<br/>
+        /// Model to use for the generation. `v0-auto` is deprecated and falls back to `v0-pro`.<br/>
         /// Default Value: v0-pro
         /// </param>
         /// <param name="imageGenerations">
