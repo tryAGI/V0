@@ -2318,28 +2318,7 @@ paths:
                           type: array
                           items:
                             type: string
-                            enum:
-                              - Upstash for Redis
-                              - Upstash Search
-                              - Neon
-                              - Supabase
-                              - Amazon Aurora DSQL
-                              - Amazon Aurora PostgreSQL
-                              - Amazon DynamoDB
-                              - firebase
-                              - Grok
-                              - fal
-                              - Deep Infra
-                              - Stripe
-                              - Clerk
-                              - Convex
-                              - Shopify
-                              - Resend email
-                              - Blob
-                              - Edge Config
-                              - Vercel AI Gateway
-                              - Snowflake
-                              - Figma
+                            maxLength: 64
                         connectedMcpPresetNames:
                           default: []
                           description: Names of MCP presets that were connected (e.g. "Linear", "Sentry"). Pass an empty array to skip.
