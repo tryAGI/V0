@@ -20,7 +20,7 @@ namespace V0
         /// Default Value: []
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectedIntegrationNames")]
-        public global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName>? ConnectedIntegrationNames { get; set; }
+        public global::System.Collections.Generic.IList<string>? ConnectedIntegrationNames { get; set; }
 
         /// <summary>
         /// Names of MCP presets that were connected (e.g. "Linear", "Sentry"). Pass an empty array to skip.<br/>
@@ -74,7 +74,7 @@ namespace V0
 #endif
         public ChatsResolveTaskRequestTaskVariant1(
             global::V0.ChatsResolveTaskRequestTaskVariant1Type type,
-            global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant1ConnectedIntegrationName>? connectedIntegrationNames,
+            global::System.Collections.Generic.IList<string>? connectedIntegrationNames,
             global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName>? connectedMcpPresetNames,
             global::System.Collections.Generic.IList<string>? appliedScripts,
             global::System.Collections.Generic.IList<string>? addedEnvVars)
