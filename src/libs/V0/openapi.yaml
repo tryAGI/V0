@@ -2313,15 +2313,15 @@ paths:
                           enum:
                             - confirmed-steps
                         connectedIntegrationNames:
-                          default: []
                           description: Names of integrations that were successfully connected (e.g. "Neon", "Supabase"). Pass an empty array to skip.
+                          default: []
                           type: array
                           items:
                             type: string
                             maxLength: 64
                         connectedMcpPresetNames:
-                          default: []
                           description: Names of MCP presets that were connected (e.g. "Linear", "Sentry"). Pass an empty array to skip.
+                          default: []
                           type: array
                           items:
                             type: string
@@ -2339,15 +2339,15 @@ paths:
                               - Contentful
                               - Slack
                         appliedScripts:
-                          default: []
                           description: Names of scripts that were applied.
+                          default: []
                           type: array
                           items:
                             type: string
                             minLength: 1
                         addedEnvVars:
-                          default: []
                           description: Names of environment variables that were added.
+                          default: []
                           type: array
                           items:
                             type: string
