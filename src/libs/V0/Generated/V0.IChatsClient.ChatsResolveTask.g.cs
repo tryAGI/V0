@@ -40,7 +40,7 @@ namespace V0
         /// </summary>
         /// <param name="chatId"></param>
         /// <param name="task">
-        /// The task resolution data. The latest message in the active chat fork must be an assistant message blocked on the matching task type.
+        /// The task resolution data. Use this when the chat is waiting for user input on the matching task type.
         /// </param>
         /// <param name="responseMode">
         /// Controls how the response is delivered.<br/>
