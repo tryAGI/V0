@@ -9,7 +9,7 @@ namespace V0
     public sealed partial class ChatsResolveTaskRequest
     {
         /// <summary>
-        /// The task resolution data. The latest message in the active chat fork must be an assistant message blocked on the matching task type.
+        /// The task resolution data. Use this when the chat is waiting for user input on the matching task type.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("task")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.AnyOfJsonConverter<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4>))]
@@ -43,7 +43,7 @@ namespace V0
         /// Initializes a new instance of the <see cref="ChatsResolveTaskRequest" /> class.
         /// </summary>
         /// <param name="task">
-        /// The task resolution data. The latest message in the active chat fork must be an assistant message blocked on the matching task type.
+        /// The task resolution data. Use this when the chat is waiting for user input on the matching task type.
         /// </param>
         /// <param name="responseMode">
         /// Controls how the response is delivered.<br/>
