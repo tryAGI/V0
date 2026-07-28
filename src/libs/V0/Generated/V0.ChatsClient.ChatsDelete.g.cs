@@ -43,7 +43,7 @@ namespace V0
 
         /// <summary>
         /// Delete Chat<br/>
-        /// Deletes a specific chat based on the provided chatId. This operation is irreversible and permanently removes the chat and its contents.
+        /// Deletes a specific chat based on the provided chatId. The chat and its contents are moved to trash and stop being retrievable immediately, then retained for 30 days before being permanently removed.
         /// </summary>
         /// <param name="chatId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -64,7 +64,7 @@ namespace V0
         }
         /// <summary>
         /// Delete Chat<br/>
-        /// Deletes a specific chat based on the provided chatId. This operation is irreversible and permanently removes the chat and its contents.
+        /// Deletes a specific chat based on the provided chatId. The chat and its contents are moved to trash and stop being retrievable immediately, then retained for 30 days before being permanently removed.
         /// </summary>
         /// <param name="chatId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
