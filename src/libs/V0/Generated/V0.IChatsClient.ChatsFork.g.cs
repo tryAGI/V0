@@ -6,7 +6,7 @@ namespace V0
     {
         /// <summary>
         /// Fork Chat<br/>
-        /// Creates a new chat fork (duplicate) from a specific version within an existing chat. Useful for branching off alternate directions without modifying the original conversation.
+        /// Creates a new chat fork (duplicate) from a specific version within a chat created through Platform API v1. To duplicate chats created in v0 web or Platform API v2, use POST /v2/chats/{chatId}/duplicate.
         /// </summary>
         /// <param name="chatId"></param>
         /// <param name="request"></param>
@@ -21,7 +21,7 @@ namespace V0
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Fork Chat<br/>
-        /// Creates a new chat fork (duplicate) from a specific version within an existing chat. Useful for branching off alternate directions without modifying the original conversation.
+        /// Creates a new chat fork (duplicate) from a specific version within a chat created through Platform API v1. To duplicate chats created in v0 web or Platform API v2, use POST /v2/chats/{chatId}/duplicate.
         /// </summary>
         /// <param name="chatId"></param>
         /// <param name="request"></param>
@@ -36,7 +36,7 @@ namespace V0
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Fork Chat<br/>
-        /// Creates a new chat fork (duplicate) from a specific version within an existing chat. Useful for branching off alternate directions without modifying the original conversation.
+        /// Creates a new chat fork (duplicate) from a specific version within a chat created through Platform API v1. To duplicate chats created in v0 web or Platform API v2, use POST /v2/chats/{chatId}/duplicate.
         /// </summary>
         /// <param name="chatId"></param>
         /// <param name="versionId">
