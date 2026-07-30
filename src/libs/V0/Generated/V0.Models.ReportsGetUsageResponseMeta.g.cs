@@ -9,7 +9,7 @@ namespace V0
     public sealed partial class ReportsGetUsageResponseMeta
     {
         /// <summary>
-        /// Number of events in this response
+        /// Number of events in THIS page only, counted after events are rolled up per message. Not a total across the query, and not a page size — do not use it to track progress or to decide whether to stop paginating. Use `pagination.hasMore` for that.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("totalCount")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,7 +25,7 @@ namespace V0
         /// Initializes a new instance of the <see cref="ReportsGetUsageResponseMeta" /> class.
         /// </summary>
         /// <param name="totalCount">
-        /// Number of events in this response
+        /// Number of events in THIS page only, counted after events are rolled up per message. Not a total across the query, and not a page size — do not use it to track progress or to decide whether to stop paginating. Use `pagination.hasMore` for that.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
