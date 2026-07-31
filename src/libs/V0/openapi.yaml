@@ -352,6 +352,13 @@ paths:
                             - status
                             - createdAt
                           additionalProperties: false
+                        metadata:
+                          type: object
+                          propertyNames:
+                            type: string
+                          additionalProperties:
+                            type: string
+                          description: Arbitrary key-value data associated with this chat.
                       required:
                         - id
                         - object
@@ -362,6 +369,7 @@ paths:
                         - authorId
                         - webUrl
                         - apiUrl
+                        - metadata
                       additionalProperties: false
                       description: Summary of a chat, including metadata like privacy, author, latest version, and URLs.
                 required:
@@ -466,6 +474,22 @@ paths:
             description: Filters chats by the Git branch name. Only returns chats that have an active Git connection with the specified branch as the head.
             type: string
           description: Filters chats by the Git branch name. Only returns chats that have an active Git connection with the specified branch as the head.
+        - name: metadata
+          in: query
+          required: false
+          schema:
+            description: Filters chats by metadata. Returns chats matching every supplied key-value pair.
+            type: object
+            propertyNames:
+              type: string
+              minLength: 1
+              maxLength: 40
+            additionalProperties:
+              type: string
+              maxLength: 500
+          description: Filters chats by metadata. Returns chats matching every supplied key-value pair.
+          style: deepObject
+          explode: true
       security:
         - apiKey: []
   /chats/init:
@@ -7113,6 +7137,13 @@ components:
             - createdAt
             - files
           additionalProperties: false
+        metadata:
+          type: object
+          propertyNames:
+            type: string
+          additionalProperties:
+            type: string
+          description: Arbitrary key-value data associated with this chat.
         url:
           type: string
           description: The canonical URL to access this chat.
@@ -7492,13 +7523,6 @@ components:
           required:
             - write
           additionalProperties: false
-        metadata:
-          type: object
-          propertyNames:
-            type: string
-          additionalProperties:
-            type: string
-          description: Arbitrary key-value data associated with this chat.
       required:
         - id
         - object
@@ -7509,11 +7533,11 @@ components:
         - authorId
         - webUrl
         - apiUrl
+        - metadata
         - url
         - messages
         - text
         - permissions
-        - metadata
       additionalProperties: false
       description: Detailed representation of a chat, including its messages, files, versions, and model configuration.
     ChatSummary:
@@ -7611,6 +7635,13 @@ components:
             - status
             - createdAt
           additionalProperties: false
+        metadata:
+          type: object
+          propertyNames:
+            type: string
+          additionalProperties:
+            type: string
+          description: Arbitrary key-value data associated with this chat.
       required:
         - id
         - object
@@ -7621,6 +7652,7 @@ components:
         - authorId
         - webUrl
         - apiUrl
+        - metadata
       additionalProperties: false
       description: Summary of a chat, including metadata like privacy, author, latest version, and URLs.
     DeploymentDetail:
@@ -9449,6 +9481,13 @@ components:
                   - status
                   - createdAt
                 additionalProperties: false
+              metadata:
+                type: object
+                propertyNames:
+                  type: string
+                additionalProperties:
+                  type: string
+                description: Arbitrary key-value data associated with this chat.
             required:
               - id
               - object
@@ -9459,6 +9498,7 @@ components:
               - authorId
               - webUrl
               - apiUrl
+              - metadata
             additionalProperties: false
             description: Summary of a chat, including metadata like privacy, author, latest version, and URLs.
           description: List of all chats that are associated with this project.

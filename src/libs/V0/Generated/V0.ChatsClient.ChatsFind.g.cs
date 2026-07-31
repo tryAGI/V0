@@ -31,7 +31,8 @@ namespace V0
             ref double? offset,
             ref global::V0.ChatsFindIsFavorite? isFavorite,
             ref string? vercelProjectId,
-            ref string? branch);
+            ref string? branch,
+            global::System.Collections.Generic.Dictionary<string, string>? metadata);
         partial void PrepareChatsFindRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -39,7 +40,8 @@ namespace V0
             double? offset,
             global::V0.ChatsFindIsFavorite? isFavorite,
             string? vercelProjectId,
-            string? branch);
+            string? branch,
+            global::System.Collections.Generic.Dictionary<string, string>? metadata);
         partial void ProcessChatsFindResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -72,6 +74,9 @@ namespace V0
         /// <param name="branch">
         /// Filters chats by the Git branch name. Only returns chats that have an active Git connection with the specified branch as the head.
         /// </param>
+        /// <param name="metadata">
+        /// Filters chats by metadata. Returns chats matching every supplied key-value pair.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::V0.ApiException"></exception>
@@ -81,6 +86,7 @@ namespace V0
             global::V0.ChatsFindIsFavorite? isFavorite = default,
             string? vercelProjectId = default,
             string? branch = default,
+            global::System.Collections.Generic.Dictionary<string, string>? metadata = default,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -90,6 +96,7 @@ namespace V0
                 isFavorite: isFavorite,
                 vercelProjectId: vercelProjectId,
                 branch: branch,
+                metadata: metadata,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -119,6 +126,9 @@ namespace V0
         /// <param name="branch">
         /// Filters chats by the Git branch name. Only returns chats that have an active Git connection with the specified branch as the head.
         /// </param>
+        /// <param name="metadata">
+        /// Filters chats by metadata. Returns chats matching every supplied key-value pair.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::V0.ApiException"></exception>
@@ -128,6 +138,7 @@ namespace V0
             global::V0.ChatsFindIsFavorite? isFavorite = default,
             string? vercelProjectId = default,
             string? branch = default,
+            global::System.Collections.Generic.Dictionary<string, string>? metadata = default,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -139,7 +150,8 @@ namespace V0
                 offset: ref offset,
                 isFavorite: ref isFavorite,
                 vercelProjectId: ref vercelProjectId,
-                branch: ref branch);
+                branch: ref branch,
+                metadata: metadata);
 
 
             var __authorizations = global::V0.EndPointSecurityResolver.ResolveAuthorizations(
@@ -173,6 +185,7 @@ namespace V0
                                 .AddOptionalParameter("isFavorite", isFavorite?.ToValueString())
                                 .AddOptionalParameter("vercelProjectId", vercelProjectId)
                                 .AddOptionalParameter("branch", branch)
+                                .AddOptionalParameter("metadata", metadata?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::V0.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -218,7 +231,8 @@ namespace V0
                     offset: offset,
                     isFavorite: isFavorite,
                     vercelProjectId: vercelProjectId,
-                    branch: branch);
+                    branch: branch,
+                    metadata: metadata);
 
                 return __httpRequest;
             }

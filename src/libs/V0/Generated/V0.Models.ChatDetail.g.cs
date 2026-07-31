@@ -112,6 +112,13 @@ namespace V0
         public global::V0.ChatDetailLatestVersion? LatestVersion { get; set; }
 
         /// <summary>
+        /// Arbitrary key-value data associated with this chat.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.Dictionary<string, string> Metadata { get; set; }
+
+        /// <summary>
         /// The canonical URL to access this chat.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("url")]
@@ -159,13 +166,6 @@ namespace V0
         public required global::V0.ChatDetailPermissions Permissions { get; set; }
 
         /// <summary>
-        /// Arbitrary key-value data associated with this chat.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, string> Metadata { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -198,6 +198,9 @@ namespace V0
         /// <param name="apiUrl">
         /// API URL to access this chat via the API.
         /// </param>
+        /// <param name="metadata">
+        /// Arbitrary key-value data associated with this chat.
+        /// </param>
         /// <param name="url">
         /// The canonical URL to access this chat.
         /// </param>
@@ -208,9 +211,6 @@ namespace V0
         /// The main user prompt or instruction that started the chat.
         /// </param>
         /// <param name="permissions"></param>
-        /// <param name="metadata">
-        /// Arbitrary key-value data associated with this chat.
-        /// </param>
         /// <param name="name">
         /// An optional name assigned to the chat by the user.
         /// </param>
@@ -247,11 +247,11 @@ namespace V0
             string authorId,
             string webUrl,
             string apiUrl,
+            global::System.Collections.Generic.Dictionary<string, string> metadata,
             string url,
             global::System.Collections.Generic.IList<global::V0.ChatDetailMessage> messages,
             string text,
             global::V0.ChatDetailPermissions permissions,
-            global::System.Collections.Generic.Dictionary<string, string> metadata,
             string? name,
             string? updatedAt,
             string? projectId,
@@ -275,13 +275,13 @@ namespace V0
             this.WebUrl = webUrl ?? throw new global::System.ArgumentNullException(nameof(webUrl));
             this.ApiUrl = apiUrl ?? throw new global::System.ArgumentNullException(nameof(apiUrl));
             this.LatestVersion = latestVersion;
+            this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Messages = messages ?? throw new global::System.ArgumentNullException(nameof(messages));
             this.Files = files;
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.ModelConfiguration = modelConfiguration;
             this.Permissions = permissions ?? throw new global::System.ArgumentNullException(nameof(permissions));
-            this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
         }
 
         /// <summary>
