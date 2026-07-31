@@ -245,6 +245,10 @@ namespace V0
 
             typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant4PermissionTypeNullableJsonConverter),
 
+            typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant5TypeJsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant5TypeNullableJsonConverter),
+
             typeof(global::V0.JsonConverters.ChatsResolveTaskRequestResponseModeJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatsResolveTaskRequestResponseModeNullableJsonConverter),
@@ -379,7 +383,7 @@ namespace V0
 
             typeof(global::V0.JsonConverters.AnyOfJsonConverter<global::V0.ChatsSendMessageRequestSkillVariant1, global::V0.ChatsSendMessageRequestSkillVariant2, global::V0.ChatsSendMessageRequestSkillVariant3>),
 
-            typeof(global::V0.JsonConverters.AnyOfJsonConverter<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4>),
+            typeof(global::V0.JsonConverters.AnyOfJsonConverter<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4, global::V0.ChatsResolveTaskRequestTaskVariant5>),
 
             typeof(global::V0.JsonConverters.AnyOfJsonConverter<global::V0.McpServersCreateRequestAuthVariant1, global::V0.McpServersCreateRequestAuthVariant2, global::V0.McpServersCreateRequestAuthVariant3, global::V0.McpServersCreateRequestAuthVariant4>),
 
@@ -593,7 +597,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsUpdateVersionRequestFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsDeleteVersionFilesRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4>), TypeInfoPropertyName = "ChatsResolveTaskRequestTaskVariant4_73f9598d350f9e84")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4, global::V0.ChatsResolveTaskRequestTaskVariant5>), TypeInfoPropertyName = "ChatsResolveTaskRequestTaskVariant5_4cf5592d9a7af8c8")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestTaskVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestTaskVariant1Type), TypeInfoPropertyName = "ChatsResolveTaskRequestTaskVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName>))]
@@ -610,6 +614,8 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant4Permission>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestTaskVariant4Permission))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestTaskVariant4PermissionType), TypeInfoPropertyName = "ChatsResolveTaskRequestTaskVariant4PermissionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestTaskVariant5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestTaskVariant5Type), TypeInfoPropertyName = "ChatsResolveTaskRequestTaskVariant5Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestResponseMode), TypeInfoPropertyName = "ChatsResolveTaskRequestResponseMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestModelConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestModelConfigurationModelId), TypeInfoPropertyName = "ChatsResolveTaskRequestModelConfigurationModelId2")]
@@ -762,7 +768,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AllOf<global::V0.ChatsInitRequest2, global::V0.AnyOf<global::V0.ChatsInitRequestVariant1, global::V0.ChatsInitRequestVariant22, global::V0.ChatsInitRequestVariant3, global::V0.ChatsInitRequestVariant4, global::V0.ChatsInitRequestVariant5>?>?), TypeInfoPropertyName = "ChatsInitRequestVariant5_37d682f35fad2e9d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.ChatsInitRequestVariant1, global::V0.ChatsInitRequestVariant22, global::V0.ChatsInitRequestVariant3, global::V0.ChatsInitRequestVariant4, global::V0.ChatsInitRequestVariant5>?), TypeInfoPropertyName = "ChatsInitRequestVariant5_81f724b881d7ba5b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.ChatsSendMessageRequestSkillVariant1, global::V0.ChatsSendMessageRequestSkillVariant2, global::V0.ChatsSendMessageRequestSkillVariant3>?), TypeInfoPropertyName = "ChatsSendMessageRequestSkillVariant3_7388c3805f550d48")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4>?), TypeInfoPropertyName = "ChatsResolveTaskRequestTaskVariant4_a1ad15825c1305f0")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4, global::V0.ChatsResolveTaskRequestTaskVariant5>?), TypeInfoPropertyName = "ChatsResolveTaskRequestTaskVariant5_9f2d990b7b0e7875")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.McpServersCreateRequestAuthVariant1, global::V0.McpServersCreateRequestAuthVariant2, global::V0.McpServersCreateRequestAuthVariant3, global::V0.McpServersCreateRequestAuthVariant4>?), TypeInfoPropertyName = "McpServersCreateRequestAuthVariant4_8f63dc24968d8440")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.McpServersUpdateRequestAuthVariant1, global::V0.McpServersUpdateRequestAuthVariant2, global::V0.McpServersUpdateRequestAuthVariant3, global::V0.McpServersUpdateRequestAuthVariant4>?), TypeInfoPropertyName = "McpServersUpdateRequestAuthVariant4_cf08077114de3796")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::V0.ChatDetailLatestVersionFile>))]

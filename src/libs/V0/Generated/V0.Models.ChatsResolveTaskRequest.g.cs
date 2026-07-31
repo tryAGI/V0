@@ -12,9 +12,9 @@ namespace V0
         /// The task resolution data. Use this when the chat is waiting for user input on the matching task type.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("task")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.AnyOfJsonConverter<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.AnyOfJsonConverter<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4, global::V0.ChatsResolveTaskRequestTaskVariant5>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4> Task { get; set; }
+        public required global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4, global::V0.ChatsResolveTaskRequestTaskVariant5> Task { get; set; }
 
         /// <summary>
         /// Controls how the response is delivered.<br/>
@@ -59,7 +59,7 @@ namespace V0
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatsResolveTaskRequest(
-            global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4> task,
+            global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4, global::V0.ChatsResolveTaskRequestTaskVariant5> task,
             global::V0.ChatsResolveTaskRequestResponseMode? responseMode,
             global::V0.ChatsResolveTaskRequestModelConfiguration? modelConfiguration)
         {

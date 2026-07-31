@@ -57,7 +57,7 @@ namespace V0
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::V0.ChatDetail> ChatsResolveTaskAsync(
             string chatId,
-            global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4> task,
+            global::V0.AnyOf<global::V0.ChatsResolveTaskRequestTaskVariant1, global::V0.ChatsResolveTaskRequestTaskVariant2, global::V0.ChatsResolveTaskRequestTaskVariant3, global::V0.ChatsResolveTaskRequestTaskVariant4, global::V0.ChatsResolveTaskRequestTaskVariant5> task,
             global::V0.ChatsResolveTaskRequestResponseMode? responseMode = default,
             global::V0.ChatsResolveTaskRequestModelConfiguration? modelConfiguration = default,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
