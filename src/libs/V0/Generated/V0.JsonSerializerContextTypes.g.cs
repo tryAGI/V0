@@ -64,59 +64,59 @@ namespace V0
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ChatDetailMessage>? Type9 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, string>? Type9 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatDetailMessage? Type10 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ChatDetailMessage>? Type10 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<byte[]>? Type11 { get; set; }
+        public global::V0.ChatDetailMessage? Type11 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public byte[]? Type12 { get; set; }
+        public global::System.Collections.Generic.IList<byte[]>? Type12 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatDetailMessageType? Type13 { get; set; }
+        public byte[]? Type13 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatDetailMessageRole? Type14 { get; set; }
+        public global::V0.ChatDetailMessageType? Type14 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatDetailMessageFinishReason? Type15 { get; set; }
+        public global::V0.ChatDetailMessageRole? Type15 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ChatDetailMessageAttachment>? Type16 { get; set; }
+        public global::V0.ChatDetailMessageFinishReason? Type16 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatDetailMessageAttachment? Type17 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ChatDetailMessageAttachment>? Type17 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public double? Type18 { get; set; }
+        public global::V0.ChatDetailMessageAttachment? Type18 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatDetailMessageAttachmentType? Type19 { get; set; }
+        public double? Type19 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ChatDetailFile>? Type20 { get; set; }
+        public global::V0.ChatDetailMessageAttachmentType? Type20 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::V0.ChatDetailFile? Type21 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ChatDetailFile>? Type21 { get; set; }
         /// <summary>
         /// 
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, string>? Type22 { get; set; }
+        public global::V0.ChatDetailFile? Type22 { get; set; }
         /// <summary>
         /// 
         /// </summary>

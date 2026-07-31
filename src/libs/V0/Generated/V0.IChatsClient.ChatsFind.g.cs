@@ -27,6 +27,9 @@ namespace V0
         /// <param name="branch">
         /// Filters chats by the Git branch name. Only returns chats that have an active Git connection with the specified branch as the head.
         /// </param>
+        /// <param name="metadata">
+        /// Filters chats by metadata. Returns chats matching every supplied key-value pair.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::V0.ApiException"></exception>
@@ -36,6 +39,7 @@ namespace V0
             global::V0.ChatsFindIsFavorite? isFavorite = default,
             string? vercelProjectId = default,
             string? branch = default,
+            global::System.Collections.Generic.Dictionary<string, string>? metadata = default,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -61,6 +65,9 @@ namespace V0
         /// <param name="branch">
         /// Filters chats by the Git branch name. Only returns chats that have an active Git connection with the specified branch as the head.
         /// </param>
+        /// <param name="metadata">
+        /// Filters chats by metadata. Returns chats matching every supplied key-value pair.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::V0.ApiException"></exception>
@@ -70,6 +77,7 @@ namespace V0
             global::V0.ChatsFindIsFavorite? isFavorite = default,
             string? vercelProjectId = default,
             string? branch = default,
+            global::System.Collections.Generic.Dictionary<string, string>? metadata = default,
             global::V0.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

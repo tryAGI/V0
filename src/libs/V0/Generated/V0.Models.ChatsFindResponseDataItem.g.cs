@@ -112,6 +112,13 @@ namespace V0
         public global::V0.ChatsFindResponseDataItemLatestVersion? LatestVersion { get; set; }
 
         /// <summary>
+        /// Arbitrary key-value data associated with this chat.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.Dictionary<string, string> Metadata { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -144,6 +151,9 @@ namespace V0
         /// <param name="apiUrl">
         /// API URL to access this chat via the API.
         /// </param>
+        /// <param name="metadata">
+        /// Arbitrary key-value data associated with this chat.
+        /// </param>
         /// <param name="name">
         /// An optional name assigned to the chat by the user.
         /// </param>
@@ -174,6 +184,7 @@ namespace V0
             string authorId,
             string webUrl,
             string apiUrl,
+            global::System.Collections.Generic.Dictionary<string, string> metadata,
             string? name,
             string? updatedAt,
             string? projectId,
@@ -195,6 +206,7 @@ namespace V0
             this.WebUrl = webUrl ?? throw new global::System.ArgumentNullException(nameof(webUrl));
             this.ApiUrl = apiUrl ?? throw new global::System.ArgumentNullException(nameof(apiUrl));
             this.LatestVersion = latestVersion;
+            this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
         }
 
         /// <summary>
