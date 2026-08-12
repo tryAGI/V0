@@ -30,6 +30,12 @@ namespace V0
         public required object Input { get; set; }
 
         /// <summary>
+        /// The tool's original human-readable name from the stopped task. Display-only; pass back unchanged. Capped at 100 characters, matching the cap applied when the name is ingested from the server.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("toolDisplayName")]
+        public string? ToolDisplayName { get; set; }
+
+        /// <summary>
         /// Label shown while the tool is running (e.g. "Running migration").
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("taskNameActive")]
@@ -63,6 +69,9 @@ namespace V0
         /// The tool call input arguments. Pass the exact input from the stopped task.
         /// </param>
         /// <param name="type"></param>
+        /// <param name="toolDisplayName">
+        /// The tool's original human-readable name from the stopped task. Display-only; pass back unchanged. Capped at 100 characters, matching the cap applied when the name is ingested from the server.
+        /// </param>
         /// <param name="taskNameActive">
         /// Label shown while the tool is running (e.g. "Running migration").
         /// </param>
@@ -79,6 +88,7 @@ namespace V0
             string toolName,
             object input,
             global::V0.ChatsResolveTaskRequestTaskVariant4PermissionType type,
+            string? toolDisplayName,
             string? taskNameActive,
             string? taskNameComplete,
             string? userMessage)
@@ -86,6 +96,7 @@ namespace V0
             this.Type = type;
             this.ToolName = toolName ?? throw new global::System.ArgumentNullException(nameof(toolName));
             this.Input = input ?? throw new global::System.ArgumentNullException(nameof(input));
+            this.ToolDisplayName = toolDisplayName;
             this.TaskNameActive = taskNameActive;
             this.TaskNameComplete = taskNameComplete;
             this.UserMessage = userMessage;
