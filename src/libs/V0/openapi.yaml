@@ -2464,6 +2464,13 @@ paths:
                                 description: The name of the tool being permitted.
                               input:
                                 description: The tool call input arguments. Pass the exact input from the stopped task.
+                              toolDisplayName:
+                                description: The tool's original human-readable name from the stopped task. Display-only; pass back unchanged. Capped at 100 characters, matching the cap applied when the name is ingested from the server.
+                                anyOf:
+                                  - type: string
+                                    minLength: 1
+                                    maxLength: 100
+                                  - type: "null"
                               taskNameActive:
                                 description: Label shown while the tool is running (e.g. "Running migration").
                                 anyOf:
