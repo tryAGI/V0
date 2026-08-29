@@ -9,11 +9,11 @@ namespace V0
     public enum McpServersCreateResponseScope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

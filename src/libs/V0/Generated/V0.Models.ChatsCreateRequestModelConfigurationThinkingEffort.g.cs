@@ -4,9 +4,9 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public sealed partial class ReportsGetUserActivityResponseMetaDateRangeEnd
+    public sealed partial class ChatsCreateRequestModelConfigurationThinkingEffort
     {
 
         /// <summary>

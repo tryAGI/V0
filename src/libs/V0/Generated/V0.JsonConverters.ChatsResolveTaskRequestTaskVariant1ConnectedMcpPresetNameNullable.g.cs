@@ -20,7 +20,7 @@ namespace V0.JsonConverters
                     {
                         return global::V0.ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetNameExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

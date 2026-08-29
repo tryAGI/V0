@@ -4,26 +4,26 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatsFindMessagesResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"list"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("object")]
         public string Object { get; set; } = "list";
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::V0.MessageSummary> Data { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
         [global::System.Text.Json.Serialization.JsonRequired]

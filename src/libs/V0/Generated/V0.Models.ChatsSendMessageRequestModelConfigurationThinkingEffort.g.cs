@@ -4,9 +4,9 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public sealed partial class ChatsUpdateRequestMetadata3
+    public sealed partial class ChatsSendMessageRequestModelConfigurationThinkingEffort
     {
 
         /// <summary>

@@ -9,11 +9,11 @@ namespace V0
     public enum ProductDetailSchemaV0Availability
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Published,
     }

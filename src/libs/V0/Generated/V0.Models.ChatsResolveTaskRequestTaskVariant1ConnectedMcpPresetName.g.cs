@@ -4,56 +4,56 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Contentful,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Context7,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glean,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Granola,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Linear,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Notion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PostHog,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sanity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sentry,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slack,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zapier,
     }

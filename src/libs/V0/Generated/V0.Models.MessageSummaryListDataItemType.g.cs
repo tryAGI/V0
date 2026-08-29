@@ -9,91 +9,91 @@ namespace V0
     public enum MessageSummaryListDataItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AddedEnvironmentVariables,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AddedIntegration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnsweredQuestions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutoFixWithV0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClonedRepo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeletedFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DesignMode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EditedFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FixCve,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FixWithV0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ForkedBlock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ForkedChat,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualCommit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Message,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MovedFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OpenInV0,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PullChanges,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Refinement,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RenamedFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReplaceSrc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RevertedBlock,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SyncGit,
     }

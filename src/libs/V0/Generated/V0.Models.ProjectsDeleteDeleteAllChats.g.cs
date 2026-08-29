@@ -10,11 +10,11 @@ namespace V0
     public enum ProjectsDeleteDeleteAllChats
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

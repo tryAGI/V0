@@ -9,11 +9,11 @@ namespace V0
     public enum SearchResultItemObject
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Chat,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Project,
     }

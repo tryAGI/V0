@@ -80,6 +80,20 @@ paths:
                       default: false
                       type: boolean
                       description: Enables thinking to generate a response in multiple steps.
+                    thinkingEffort:
+                      anyOf:
+                        - type: string
+                          enum:
+                            - none
+                            - minimal
+                            - low
+                            - medium
+                            - high
+                            - max
+                            - xhigh
+                        - type: "null"
+                    fast:
+                      type: boolean
                   additionalProperties: false
                 responseMode:
                   default: sync
@@ -1408,6 +1422,20 @@ paths:
                       default: false
                       type: boolean
                       description: Enables thinking to generate a response in multiple steps.
+                    thinkingEffort:
+                      anyOf:
+                        - type: string
+                          enum:
+                            - none
+                            - minimal
+                            - low
+                            - medium
+                            - high
+                            - max
+                            - xhigh
+                        - type: "null"
+                    fast:
+                      type: boolean
                   additionalProperties: false
                 responseMode:
                   default: sync
@@ -2548,6 +2576,20 @@ paths:
                       default: false
                       type: boolean
                       description: Enables thinking to generate a response in multiple steps.
+                    thinkingEffort:
+                      anyOf:
+                        - type: string
+                          enum:
+                            - none
+                            - minimal
+                            - low
+                            - medium
+                            - high
+                            - max
+                            - xhigh
+                        - type: "null"
+                    fast:
+                      type: boolean
                   additionalProperties: false
               required:
                 - task
@@ -7519,6 +7561,20 @@ components:
               default: false
               type: boolean
               description: Enables thinking to generate a response in multiple steps.
+            thinkingEffort:
+              anyOf:
+                - type: string
+                  enum:
+                    - none
+                    - minimal
+                    - low
+                    - medium
+                    - high
+                    - max
+                    - xhigh
+                - type: "null"
+            fast:
+              type: boolean
           additionalProperties: false
           description: The configuration used to generate responses in this chat.
         permissions:

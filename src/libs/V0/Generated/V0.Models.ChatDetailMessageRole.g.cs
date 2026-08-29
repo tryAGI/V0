@@ -9,11 +9,11 @@ namespace V0
     public enum ChatDetailMessageRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

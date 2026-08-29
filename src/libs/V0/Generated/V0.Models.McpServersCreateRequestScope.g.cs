@@ -10,11 +10,11 @@ namespace V0
     public enum McpServersCreateRequestScope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

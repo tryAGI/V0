@@ -20,7 +20,7 @@ namespace V0.JsonConverters
                     {
                         return global::V0.ProductDetailSchemaV0AvailabilityExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

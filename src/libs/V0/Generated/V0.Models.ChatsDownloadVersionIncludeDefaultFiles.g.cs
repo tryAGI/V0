@@ -9,11 +9,11 @@ namespace V0
     public enum ChatsDownloadVersionIncludeDefaultFiles
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

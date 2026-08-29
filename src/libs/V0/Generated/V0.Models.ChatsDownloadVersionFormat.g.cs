@@ -10,11 +10,11 @@ namespace V0
     public enum ChatsDownloadVersionFormat
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tarball,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zip,
     }

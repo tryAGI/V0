@@ -149,7 +149,7 @@ namespace V0
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::V0.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

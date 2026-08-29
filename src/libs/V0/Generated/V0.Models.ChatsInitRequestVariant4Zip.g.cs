@@ -9,7 +9,7 @@ namespace V0
     public sealed partial class ChatsInitRequestVariant4Zip
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("url")]
         [global::System.Text.Json.Serialization.JsonRequired]

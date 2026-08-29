@@ -159,7 +159,7 @@ namespace V0
         public global::V0.ChatDetailModelConfiguration? ModelConfiguration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
         [global::System.Text.Json.Serialization.JsonRequired]

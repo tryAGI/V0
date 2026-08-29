@@ -4,7 +4,7 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatDetailFile
     {

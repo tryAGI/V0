@@ -40,7 +40,7 @@ namespace V0
 
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext { get; set; }
 
@@ -51,42 +51,42 @@ namespace V0
         public ChatsClient Chats { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeploymentsClient Deployments { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public HooksClient Hooks { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IntegrationsClient Integrations { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public McpServersClient McpServers { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectsClient Projects { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RateLimitsClient RateLimits { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ReportsClient Reports { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserClient User { get; }
 

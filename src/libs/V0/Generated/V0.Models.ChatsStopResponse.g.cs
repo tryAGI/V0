@@ -4,12 +4,12 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatsStopResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>true</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("success")]

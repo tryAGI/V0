@@ -4,40 +4,40 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ReportsGetUsageResponseDataItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuyTemplate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageGeneration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InlineEdit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualDebit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Message,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RefundTemplatePurchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReverseTemplateSale,
     }
