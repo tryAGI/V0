@@ -9,7 +9,7 @@ namespace V0
     public sealed partial class ChatsResolveTaskRequestTaskVariant4
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant4TypeJsonConverter))]

@@ -20,7 +20,7 @@ namespace V0.JsonConverters
                     {
                         return global::V0.ChatsCreateRequestSkillVariant3TypeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

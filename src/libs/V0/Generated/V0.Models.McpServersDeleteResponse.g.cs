@@ -4,12 +4,12 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class McpServersDeleteResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"mcp_server"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("object")]

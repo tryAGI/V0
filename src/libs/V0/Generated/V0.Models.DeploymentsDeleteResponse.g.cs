@@ -4,26 +4,26 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DeploymentsDeleteResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"deployment"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("object")]
         public string Object { get; set; } = "deployment";
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>true</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("deleted")]

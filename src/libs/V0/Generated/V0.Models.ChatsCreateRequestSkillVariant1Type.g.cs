@@ -9,7 +9,7 @@ namespace V0
     public enum ChatsCreateRequestSkillVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Remote,
     }

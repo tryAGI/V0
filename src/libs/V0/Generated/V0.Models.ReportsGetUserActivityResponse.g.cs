@@ -4,26 +4,26 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ReportsGetUserActivityResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"list"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("object")]
         public string Object { get; set; } = "list";
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::V0.ReportsGetUserActivityResponseDataItem> Data { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
         [global::System.Text.Json.Serialization.JsonRequired]

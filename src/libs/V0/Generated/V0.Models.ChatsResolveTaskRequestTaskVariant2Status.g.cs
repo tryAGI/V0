@@ -9,15 +9,15 @@ namespace V0
     public enum ChatsResolveTaskRequestTaskVariant2Status
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Approved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequestChanges,
     }

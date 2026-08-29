@@ -4,12 +4,12 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ChatsResolveTaskRequestTaskVariant4Permission
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatsResolveTaskRequestTaskVariant4PermissionTypeJsonConverter))]

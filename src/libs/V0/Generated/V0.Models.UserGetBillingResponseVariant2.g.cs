@@ -4,19 +4,19 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UserGetBillingResponseVariant2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"legacy"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingType")]
         public string BillingType { get; set; } = "legacy";
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]

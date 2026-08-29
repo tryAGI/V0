@@ -91,7 +91,7 @@ namespace V0
         public string? ParentId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attachments")]
         public global::System.Collections.Generic.IList<global::V0.MessageSummaryAttachment>? Attachments { get; set; }

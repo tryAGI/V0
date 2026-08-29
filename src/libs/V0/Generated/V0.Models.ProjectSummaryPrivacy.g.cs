@@ -9,11 +9,11 @@ namespace V0
     public enum ProjectSummaryPrivacy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
     }

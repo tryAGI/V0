@@ -4,12 +4,12 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatsResolveTaskRequestTaskVariant1Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConfirmedSteps,
     }

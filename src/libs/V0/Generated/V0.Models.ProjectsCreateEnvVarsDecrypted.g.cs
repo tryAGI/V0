@@ -9,11 +9,11 @@ namespace V0
     public enum ProjectsCreateEnvVarsDecrypted
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         False,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         True,
     }

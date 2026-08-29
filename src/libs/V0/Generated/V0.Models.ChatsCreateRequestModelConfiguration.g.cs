@@ -31,6 +31,18 @@ namespace V0
         public bool? Thinking { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("thinkingEffort")]
+        public global::V0.ChatsCreateRequestModelConfigurationThinkingEffort2? ThinkingEffort { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fast")]
+        public bool? Fast { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -51,17 +63,23 @@ namespace V0
         /// Enables thinking to generate a response in multiple steps.<br/>
         /// Default Value: false
         /// </param>
+        /// <param name="thinkingEffort"></param>
+        /// <param name="fast"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatsCreateRequestModelConfiguration(
             global::V0.ChatsCreateRequestModelConfigurationModelId? modelId,
             bool? imageGenerations,
-            bool? thinking)
+            bool? thinking,
+            global::V0.ChatsCreateRequestModelConfigurationThinkingEffort2? thinkingEffort,
+            bool? fast)
         {
             this.ModelId = modelId;
             this.ImageGenerations = imageGenerations;
             this.Thinking = thinking;
+            this.ThinkingEffort = thinkingEffort;
+            this.Fast = fast;
         }
 
         /// <summary>

@@ -9,11 +9,11 @@ namespace V0
     public enum ProjectsCreateRequestPrivacy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
     }

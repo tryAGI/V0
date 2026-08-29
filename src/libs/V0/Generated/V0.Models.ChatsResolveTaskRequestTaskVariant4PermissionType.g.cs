@@ -4,12 +4,12 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChatsResolveTaskRequestTaskVariant4PermissionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllowDynamicToolStrict,
     }

@@ -9,15 +9,15 @@ namespace V0
     public enum MessageSummaryListDataItemAttachmentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Figma,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Screenshot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zip,
     }

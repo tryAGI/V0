@@ -7,7 +7,7 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
@@ -40,6 +40,10 @@ namespace V0
             typeof(global::V0.JsonConverters.ChatDetailModelConfigurationModelIdJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatDetailModelConfigurationModelIdNullableJsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatDetailModelConfigurationThinkingEffort2JsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatDetailModelConfigurationThinkingEffort2NullableJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatSummaryPrivacyJsonConverter),
 
@@ -161,6 +165,10 @@ namespace V0
 
             typeof(global::V0.JsonConverters.ChatsCreateRequestModelConfigurationModelIdNullableJsonConverter),
 
+            typeof(global::V0.JsonConverters.ChatsCreateRequestModelConfigurationThinkingEffort2JsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatsCreateRequestModelConfigurationThinkingEffort2NullableJsonConverter),
+
             typeof(global::V0.JsonConverters.ChatsCreateRequestResponseModeJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatsCreateRequestResponseModeNullableJsonConverter),
@@ -196,6 +204,10 @@ namespace V0
             typeof(global::V0.JsonConverters.ChatsSendMessageRequestModelConfigurationModelIdJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatsSendMessageRequestModelConfigurationModelIdNullableJsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatsSendMessageRequestModelConfigurationThinkingEffort2JsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatsSendMessageRequestModelConfigurationThinkingEffort2NullableJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatsSendMessageRequestResponseModeJsonConverter),
 
@@ -256,6 +268,10 @@ namespace V0
             typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationModelIdJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationModelIdNullableJsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationThinkingEffort2JsonConverter),
+
+            typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationThinkingEffort2NullableJsonConverter),
 
             typeof(global::V0.JsonConverters.HooksCreateRequestEventJsonConverter),
 
@@ -394,6 +410,7 @@ namespace V0
             typeof(global::V0.JsonConverters.UnixTimestampJsonConverter),
         })]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.JsonSerializerContextTypes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetail))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
@@ -419,6 +436,8 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailModelConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailModelConfigurationModelId), TypeInfoPropertyName = "ChatDetailModelConfigurationModelId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailModelConfigurationThinkingEffort2), TypeInfoPropertyName = "ChatDetailModelConfigurationThinkingEffort22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailPermissions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatSummary))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatSummaryPrivacy), TypeInfoPropertyName = "ChatSummaryPrivacy2")]
@@ -442,7 +461,6 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.HookSummary))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.IntegrationConnectionDetailSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.IntegrationConnectionDetailSchemaIntegration))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.IntegrationConnectionListSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.IntegrationConnectionListSchemaDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.IntegrationConnectionListSchemaDataItem))]
@@ -544,6 +562,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestChatPrivacy), TypeInfoPropertyName = "ChatsCreateRequestChatPrivacy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestModelConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestModelConfigurationModelId), TypeInfoPropertyName = "ChatsCreateRequestModelConfigurationModelId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestModelConfigurationThinkingEffort2), TypeInfoPropertyName = "ChatsCreateRequestModelConfigurationThinkingEffort22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestResponseMode), TypeInfoPropertyName = "ChatsCreateRequestResponseMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.AnyOf<global::V0.ChatsCreateRequestSkillVariant1, global::V0.ChatsCreateRequestSkillVariant2, global::V0.ChatsCreateRequestSkillVariant3>>))]
@@ -581,6 +600,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestAttachment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestModelConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestModelConfigurationModelId), TypeInfoPropertyName = "ChatsSendMessageRequestModelConfigurationModelId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort2), TypeInfoPropertyName = "ChatsSendMessageRequestModelConfigurationThinkingEffort22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestResponseMode), TypeInfoPropertyName = "ChatsSendMessageRequestResponseMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.AnyOf<global::V0.ChatsSendMessageRequestSkillVariant1, global::V0.ChatsSendMessageRequestSkillVariant2, global::V0.ChatsSendMessageRequestSkillVariant3>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.ChatsSendMessageRequestSkillVariant1, global::V0.ChatsSendMessageRequestSkillVariant2, global::V0.ChatsSendMessageRequestSkillVariant3>), TypeInfoPropertyName = "AnyOfChatsSendMessageRequestSkillVariant1ChatsSendMessageRequestSkillVariant2ChatsSendMessageRequestSkillVariant32")]
@@ -619,6 +639,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestResponseMode), TypeInfoPropertyName = "ChatsResolveTaskRequestResponseMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestModelConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestModelConfigurationModelId), TypeInfoPropertyName = "ChatsResolveTaskRequestModelConfigurationModelId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestModelConfigurationThinkingEffort2), TypeInfoPropertyName = "ChatsResolveTaskRequestModelConfigurationThinkingEffort22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.DeploymentsCreateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.HooksCreateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.HooksCreateRequestEvent>))]
@@ -742,7 +763,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.ReportsGetUserActivityResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseDataItemUser))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2), TypeInfoPropertyName = "ReportsGetUserActivityResponseDataItemUserTeamV0Role22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseMeta))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseMetaDateRange))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.McpServersFindResponse))]

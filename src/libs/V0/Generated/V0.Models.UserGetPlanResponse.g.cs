@@ -4,33 +4,33 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UserGetPlanResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"plan"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("object")]
         public string Object { get; set; } = "plan";
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Plan { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("billingCycle")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::V0.UserGetPlanResponseBillingCycle BillingCycle { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("balance")]
         [global::System.Text.Json.Serialization.JsonRequired]

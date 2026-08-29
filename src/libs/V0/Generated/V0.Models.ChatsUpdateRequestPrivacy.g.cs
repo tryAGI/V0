@@ -9,23 +9,23 @@ namespace V0
     public enum ChatsUpdateRequestPrivacy
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Private,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Public,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TeamEdit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unlisted,
     }

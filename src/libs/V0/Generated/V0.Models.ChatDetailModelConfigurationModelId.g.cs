@@ -10,31 +10,31 @@ namespace V0
     public enum ChatDetailModelConfigurationModelId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Auto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Max,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0MaxFast,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Mini,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Opus47,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Opus47Fast,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Pro,
     }

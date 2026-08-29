@@ -9,19 +9,19 @@ namespace V0
     public enum McpServersGetByIdResponseAuthType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bearer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomHeaders,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Oauth,
     }

@@ -4,32 +4,32 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UserGetBillingResponseVariant1DataOnDemandBlock
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expirationDate")]
         public double? ExpirationDate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("effectiveDate")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double EffectiveDate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("originalBalance")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double OriginalBalance { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("currentBalance")]
         [global::System.Text.Json.Serialization.JsonRequired]

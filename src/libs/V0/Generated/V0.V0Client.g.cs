@@ -11,7 +11,7 @@ namespace V0
     public sealed partial class V0Client : global::V0.IV0Client, global::System.IDisposable
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public const string DefaultBaseUrl = "https://api.v0.dev/v1";
 
@@ -38,7 +38,7 @@ namespace V0
         internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::V0.SourceGenerationContext.Default);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::System.Text.Json.Serialization.JsonSerializerContext JsonSerializerContext
         {
@@ -57,7 +57,7 @@ namespace V0
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public DeploymentsClient Deployments => new DeploymentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -66,7 +66,7 @@ namespace V0
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public HooksClient Hooks => new HooksClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -75,7 +75,7 @@ namespace V0
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IntegrationsClient Integrations => new IntegrationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -84,7 +84,7 @@ namespace V0
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public McpServersClient McpServers => new McpServersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -93,7 +93,7 @@ namespace V0
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ProjectsClient Projects => new ProjectsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -102,7 +102,7 @@ namespace V0
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public RateLimitsClient RateLimits => new RateLimitsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -111,7 +111,7 @@ namespace V0
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public ReportsClient Reports => new ReportsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
@@ -120,7 +120,7 @@ namespace V0
         };
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public UserClient User => new UserClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {

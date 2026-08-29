@@ -9,11 +9,11 @@ namespace V0
     public enum MessageDetailRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Assistant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }

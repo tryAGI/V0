@@ -9,7 +9,7 @@ namespace V0
     public sealed partial class ChatsSendMessageRequestAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"fix-with-v0"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]

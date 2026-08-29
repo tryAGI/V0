@@ -4,36 +4,36 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum HookDetailEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChatUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageFinished,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessageUpdated,
     }

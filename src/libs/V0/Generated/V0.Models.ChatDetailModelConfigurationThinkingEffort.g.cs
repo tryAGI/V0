@@ -4,9 +4,9 @@
 namespace V0
 {
     /// <summary>
-    /// Timestamp of the user's first activity
+    ///
     /// </summary>
-    public sealed partial class ReportsGetUserActivityResponseDataItemFirstActivity
+    public sealed partial class ChatDetailModelConfigurationThinkingEffort
     {
 
         /// <summary>

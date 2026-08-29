@@ -4,20 +4,20 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ReportsGetUserActivityResponseDataItemUserTeamV0Role2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Builder,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Chatter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         V0Viewer,
     }

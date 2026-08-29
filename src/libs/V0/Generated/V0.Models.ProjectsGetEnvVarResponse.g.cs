@@ -4,12 +4,12 @@
 namespace V0
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ProjectsGetEnvVarResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <default>"environment_variable"</default>
         [global::System.Text.Json.Serialization.JsonPropertyName("object")]

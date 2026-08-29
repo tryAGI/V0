@@ -9,11 +9,11 @@ namespace V0
     public enum DeploymentsFindLogsResponseLogType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stderr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stdout,
     }

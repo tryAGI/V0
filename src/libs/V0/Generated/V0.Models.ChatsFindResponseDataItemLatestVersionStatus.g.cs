@@ -9,15 +9,15 @@ namespace V0
     public enum ChatsFindResponseDataItemLatestVersionStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Completed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Failed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
     }

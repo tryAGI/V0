@@ -9,11 +9,11 @@ namespace V0
     public enum McpServersGetByIdResponseScope
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
     }
