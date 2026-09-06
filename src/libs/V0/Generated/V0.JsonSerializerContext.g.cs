@@ -41,9 +41,9 @@ namespace V0
 
             typeof(global::V0.JsonConverters.ChatDetailModelConfigurationModelIdNullableJsonConverter),
 
-            typeof(global::V0.JsonConverters.ChatDetailModelConfigurationThinkingEffort2JsonConverter),
+            typeof(global::V0.JsonConverters.ChatDetailModelConfigurationThinkingEffortJsonConverter),
 
-            typeof(global::V0.JsonConverters.ChatDetailModelConfigurationThinkingEffort2NullableJsonConverter),
+            typeof(global::V0.JsonConverters.ChatDetailModelConfigurationThinkingEffortNullableJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatSummaryPrivacyJsonConverter),
 
@@ -165,9 +165,9 @@ namespace V0
 
             typeof(global::V0.JsonConverters.ChatsCreateRequestModelConfigurationModelIdNullableJsonConverter),
 
-            typeof(global::V0.JsonConverters.ChatsCreateRequestModelConfigurationThinkingEffort2JsonConverter),
+            typeof(global::V0.JsonConverters.ChatsCreateRequestModelConfigurationThinkingEffortJsonConverter),
 
-            typeof(global::V0.JsonConverters.ChatsCreateRequestModelConfigurationThinkingEffort2NullableJsonConverter),
+            typeof(global::V0.JsonConverters.ChatsCreateRequestModelConfigurationThinkingEffortNullableJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatsCreateRequestResponseModeJsonConverter),
 
@@ -205,9 +205,9 @@ namespace V0
 
             typeof(global::V0.JsonConverters.ChatsSendMessageRequestModelConfigurationModelIdNullableJsonConverter),
 
-            typeof(global::V0.JsonConverters.ChatsSendMessageRequestModelConfigurationThinkingEffort2JsonConverter),
+            typeof(global::V0.JsonConverters.ChatsSendMessageRequestModelConfigurationThinkingEffortJsonConverter),
 
-            typeof(global::V0.JsonConverters.ChatsSendMessageRequestModelConfigurationThinkingEffort2NullableJsonConverter),
+            typeof(global::V0.JsonConverters.ChatsSendMessageRequestModelConfigurationThinkingEffortNullableJsonConverter),
 
             typeof(global::V0.JsonConverters.ChatsSendMessageRequestResponseModeJsonConverter),
 
@@ -269,9 +269,9 @@ namespace V0
 
             typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationModelIdNullableJsonConverter),
 
-            typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationThinkingEffort2JsonConverter),
+            typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationThinkingEffortJsonConverter),
 
-            typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationThinkingEffort2NullableJsonConverter),
+            typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationThinkingEffortNullableJsonConverter),
 
             typeof(global::V0.JsonConverters.HooksCreateRequestEventJsonConverter),
 
@@ -353,9 +353,9 @@ namespace V0
 
             typeof(global::V0.JsonConverters.ReportsGetUsageResponseDataItemTypeNullableJsonConverter),
 
-            typeof(global::V0.JsonConverters.ReportsGetUserActivityResponseDataItemUserTeamV0Role2JsonConverter),
+            typeof(global::V0.JsonConverters.ReportsGetUserActivityResponseDataItemUserTeamV0RoleJsonConverter),
 
-            typeof(global::V0.JsonConverters.ReportsGetUserActivityResponseDataItemUserTeamV0Role2NullableJsonConverter),
+            typeof(global::V0.JsonConverters.ReportsGetUserActivityResponseDataItemUserTeamV0RoleNullableJsonConverter),
 
             typeof(global::V0.JsonConverters.McpServersFindResponseDataItemAuthTypeJsonConverter),
 
@@ -436,7 +436,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailModelConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailModelConfigurationModelId), TypeInfoPropertyName = "ChatDetailModelConfigurationModelId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailModelConfigurationThinkingEffort2), TypeInfoPropertyName = "ChatDetailModelConfigurationThinkingEffort22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailModelConfigurationThinkingEffort), TypeInfoPropertyName = "ChatDetailModelConfigurationThinkingEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatDetailPermissions))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatSummary))]
@@ -519,10 +519,10 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.SearchResultItemObject), TypeInfoPropertyName = "SearchResultItemObject2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserDetailSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesPostResponseSchema))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesPostResponseSchemaPreferences2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesPostResponseSchemaPreferences))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesPostResponseSchemaPreferencesNotifications))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesResponseSchema))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesResponseSchemaPreferences2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesResponseSchemaPreferences))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesResponseSchemaPreferencesNotifications))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesSchema))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.UserPreferencesSchemaNotifications))]
@@ -562,7 +562,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestChatPrivacy), TypeInfoPropertyName = "ChatsCreateRequestChatPrivacy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestModelConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestModelConfigurationModelId), TypeInfoPropertyName = "ChatsCreateRequestModelConfigurationModelId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestModelConfigurationThinkingEffort2), TypeInfoPropertyName = "ChatsCreateRequestModelConfigurationThinkingEffort22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestModelConfigurationThinkingEffort), TypeInfoPropertyName = "ChatsCreateRequestModelConfigurationThinkingEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsCreateRequestResponseMode), TypeInfoPropertyName = "ChatsCreateRequestResponseMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.AnyOf<global::V0.ChatsCreateRequestSkillVariant1, global::V0.ChatsCreateRequestSkillVariant2, global::V0.ChatsCreateRequestSkillVariant3>>))]
@@ -600,7 +600,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestAttachment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestModelConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestModelConfigurationModelId), TypeInfoPropertyName = "ChatsSendMessageRequestModelConfigurationModelId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort2), TypeInfoPropertyName = "ChatsSendMessageRequestModelConfigurationThinkingEffort22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort), TypeInfoPropertyName = "ChatsSendMessageRequestModelConfigurationThinkingEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsSendMessageRequestResponseMode), TypeInfoPropertyName = "ChatsSendMessageRequestResponseMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.AnyOf<global::V0.ChatsSendMessageRequestSkillVariant1, global::V0.ChatsSendMessageRequestSkillVariant2, global::V0.ChatsSendMessageRequestSkillVariant3>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.AnyOf<global::V0.ChatsSendMessageRequestSkillVariant1, global::V0.ChatsSendMessageRequestSkillVariant2, global::V0.ChatsSendMessageRequestSkillVariant3>), TypeInfoPropertyName = "AnyOfChatsSendMessageRequestSkillVariant1ChatsSendMessageRequestSkillVariant2ChatsSendMessageRequestSkillVariant32")]
@@ -639,7 +639,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestResponseMode), TypeInfoPropertyName = "ChatsResolveTaskRequestResponseMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestModelConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestModelConfigurationModelId), TypeInfoPropertyName = "ChatsResolveTaskRequestModelConfigurationModelId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestModelConfigurationThinkingEffort2), TypeInfoPropertyName = "ChatsResolveTaskRequestModelConfigurationThinkingEffort22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ChatsResolveTaskRequestModelConfigurationThinkingEffort), TypeInfoPropertyName = "ChatsResolveTaskRequestModelConfigurationThinkingEffort2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.DeploymentsCreateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.HooksCreateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.HooksCreateRequestEvent>))]
@@ -763,7 +763,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.ReportsGetUserActivityResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseDataItemUser))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2), TypeInfoPropertyName = "ReportsGetUserActivityResponseDataItemUserTeamV0Role22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role), TypeInfoPropertyName = "ReportsGetUserActivityResponseDataItemUserTeamV0Role2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseMeta))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUserActivityResponseMetaDateRange))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.McpServersFindResponse))]

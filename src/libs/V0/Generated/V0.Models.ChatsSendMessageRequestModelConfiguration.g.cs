@@ -34,7 +34,7 @@ namespace V0
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("thinkingEffort")]
-        public global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort2? ThinkingEffort { get; set; }
+        public global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort? ThinkingEffort { get; set; }
 
         /// <summary>
         ///
@@ -72,7 +72,7 @@ namespace V0
             global::V0.ChatsSendMessageRequestModelConfigurationModelId? modelId,
             bool? imageGenerations,
             bool? thinking,
-            global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort2? thinkingEffort,
+            global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort? thinkingEffort,
             bool? fast)
         {
             this.ModelId = modelId;
