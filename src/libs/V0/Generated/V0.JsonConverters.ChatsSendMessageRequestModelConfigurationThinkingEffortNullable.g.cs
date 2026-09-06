@@ -3,10 +3,10 @@
 namespace V0.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class ReportsGetUserActivityResponseDataItemUserTeamV0Role2JsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2>
+    public sealed class ChatsSendMessageRequestModelConfigurationThinkingEffortNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort?>
     {
         /// <inheritdoc />
-        public override global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2 Read(
+        public override global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace V0.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2Extensions.ToEnum(stringValue) ?? default;
+                        return global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffortExtensions.ToEnum(stringValue);
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace V0.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2)numValue;
+                    return (global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2);
+                    return default(global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,12 +42,19 @@ namespace V0.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2 value,
+            global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            writer.WriteStringValue(global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2Extensions.ToValueString(value));
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffortExtensions.ToValueString(value.Value));
+            }
         }
     }
 }

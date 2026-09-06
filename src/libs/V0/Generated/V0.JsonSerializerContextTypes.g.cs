@@ -133,7 +133,7 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ChatDetailModelConfigurationThinkingEffort2? Type25 { get; set; }
+        public global::V0.ChatDetailModelConfigurationThinkingEffort? Type25 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -465,7 +465,7 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
-        public global::V0.UserPreferencesPostResponseSchemaPreferences2? Type108 { get; set; }
+        public global::V0.UserPreferencesPostResponseSchemaPreferences? Type108 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -477,7 +477,7 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
-        public global::V0.UserPreferencesResponseSchemaPreferences2? Type111 { get; set; }
+        public global::V0.UserPreferencesResponseSchemaPreferences? Type111 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -637,7 +637,7 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ChatsCreateRequestModelConfigurationThinkingEffort2? Type151 { get; set; }
+        public global::V0.ChatsCreateRequestModelConfigurationThinkingEffort? Type151 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -781,7 +781,7 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort2? Type187 { get; set; }
+        public global::V0.ChatsSendMessageRequestModelConfigurationThinkingEffort? Type187 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -925,7 +925,7 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ChatsResolveTaskRequestModelConfigurationThinkingEffort2? Type223 { get; set; }
+        public global::V0.ChatsResolveTaskRequestModelConfigurationThinkingEffort? Type223 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1413,7 +1413,7 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2? Type345 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role? Type345 { get; set; }
         /// <summary>
         ///
         /// </summary>

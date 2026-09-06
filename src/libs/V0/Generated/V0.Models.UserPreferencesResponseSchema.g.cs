@@ -19,7 +19,7 @@ namespace V0
         /// The user's current preferences, or null if errored.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preferences")]
-        public global::V0.UserPreferencesResponseSchemaPreferences2? Preferences { get; set; }
+        public global::V0.UserPreferencesResponseSchemaPreferences? Preferences { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,7 +40,7 @@ namespace V0
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserPreferencesResponseSchema(
-            global::V0.UserPreferencesResponseSchemaPreferences2? preferences,
+            global::V0.UserPreferencesResponseSchemaPreferences? preferences,
             string @object = "user_preferences")
         {
             this.Object = @object;

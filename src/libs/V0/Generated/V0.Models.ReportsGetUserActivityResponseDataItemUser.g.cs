@@ -59,7 +59,7 @@ namespace V0
         /// The user's v0 role
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamV0Role")]
-        public global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2? TeamV0Role { get; set; }
+        public global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role? TeamV0Role { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -104,7 +104,7 @@ namespace V0
             global::System.DateTime createdAt,
             string? name,
             global::System.DateTime? updatedAt,
-            global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role2? teamV0Role,
+            global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role? teamV0Role,
             string @object = "user")
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

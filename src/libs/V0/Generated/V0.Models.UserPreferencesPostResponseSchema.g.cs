@@ -19,7 +19,7 @@ namespace V0
         /// The updated preferences if successful, or null if failed.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preferences")]
-        public global::V0.UserPreferencesPostResponseSchemaPreferences2? Preferences { get; set; }
+        public global::V0.UserPreferencesPostResponseSchemaPreferences? Preferences { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,7 +40,7 @@ namespace V0
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserPreferencesPostResponseSchema(
-            global::V0.UserPreferencesPostResponseSchemaPreferences2? preferences,
+            global::V0.UserPreferencesPostResponseSchemaPreferences? preferences,
             string @object = "user_preferences")
         {
             this.Object = @object;
