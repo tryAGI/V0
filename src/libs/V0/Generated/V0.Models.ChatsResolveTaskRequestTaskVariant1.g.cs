@@ -16,11 +16,18 @@ namespace V0
         public global::V0.ChatsResolveTaskRequestTaskVariant1Type Type { get; set; }
 
         /// <summary>
-        /// Names of integrations that were successfully connected (e.g. "Neon", "Supabase"). Pass an empty array to skip.<br/>
+        /// Names of integrations that were successfully connected (e.g. "Neon"). Pass an empty array to skip.<br/>
         /// Default Value: []
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectedIntegrationNames")]
         public global::System.Collections.Generic.IList<string>? ConnectedIntegrationNames { get; set; }
+
+        /// <summary>
+        /// Qualified npm registry IDs that were successfully connected (e.g. "npm:https://registry.example.com/"). Pass an empty array to skip.<br/>
+        /// Default Value: []
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectedNpmRegistryIds")]
+        public global::System.Collections.Generic.IList<string>? ConnectedNpmRegistryIds { get; set; }
 
         /// <summary>
         /// Names of MCP presets that were connected (e.g. "Linear", "Sentry"). Pass an empty array to skip.<br/>
@@ -54,7 +61,11 @@ namespace V0
         /// </summary>
         /// <param name="type"></param>
         /// <param name="connectedIntegrationNames">
-        /// Names of integrations that were successfully connected (e.g. "Neon", "Supabase"). Pass an empty array to skip.<br/>
+        /// Names of integrations that were successfully connected (e.g. "Neon"). Pass an empty array to skip.<br/>
+        /// Default Value: []
+        /// </param>
+        /// <param name="connectedNpmRegistryIds">
+        /// Qualified npm registry IDs that were successfully connected (e.g. "npm:https://registry.example.com/"). Pass an empty array to skip.<br/>
         /// Default Value: []
         /// </param>
         /// <param name="connectedMcpPresetNames">
@@ -75,12 +86,14 @@ namespace V0
         public ChatsResolveTaskRequestTaskVariant1(
             global::V0.ChatsResolveTaskRequestTaskVariant1Type type,
             global::System.Collections.Generic.IList<string>? connectedIntegrationNames,
+            global::System.Collections.Generic.IList<string>? connectedNpmRegistryIds,
             global::System.Collections.Generic.IList<global::V0.ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName>? connectedMcpPresetNames,
             global::System.Collections.Generic.IList<string>? appliedScripts,
             global::System.Collections.Generic.IList<string>? addedEnvVars)
         {
             this.Type = type;
             this.ConnectedIntegrationNames = connectedIntegrationNames;
+            this.ConnectedNpmRegistryIds = connectedNpmRegistryIds;
             this.ConnectedMcpPresetNames = connectedMcpPresetNames;
             this.AppliedScripts = appliedScripts;
             this.AddedEnvVars = addedEnvVars;
