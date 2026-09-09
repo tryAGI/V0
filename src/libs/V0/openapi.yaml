@@ -2365,12 +2365,19 @@ paths:
                           enum:
                             - confirmed-steps
                         connectedIntegrationNames:
-                          description: Names of integrations that were successfully connected (e.g. "Neon", "Supabase"). Pass an empty array to skip.
+                          description: Names of integrations that were successfully connected (e.g. "Neon"). Pass an empty array to skip.
                           default: []
                           type: array
                           items:
                             type: string
-                            maxLength: 64
+                            maxLength: 2052
+                        connectedNpmRegistryIds:
+                          description: Qualified npm registry IDs that were successfully connected (e.g. "npm:https://registry.example.com/"). Pass an empty array to skip.
+                          default: []
+                          type: array
+                          items:
+                            type: string
+                            maxLength: 2052
                         connectedMcpPresetNames:
                           description: Names of MCP presets that were connected (e.g. "Linear", "Sentry"). Pass an empty array to skip.
                           default: []
