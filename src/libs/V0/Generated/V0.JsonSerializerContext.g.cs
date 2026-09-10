@@ -353,6 +353,10 @@ namespace V0
 
             typeof(global::V0.JsonConverters.ReportsGetUsageResponseDataItemTypeNullableJsonConverter),
 
+            typeof(global::V0.JsonConverters.ReportsGetUsageResponseDataItemCostBreakdownStatusJsonConverter),
+
+            typeof(global::V0.JsonConverters.ReportsGetUsageResponseDataItemCostBreakdownStatusNullableJsonConverter),
+
             typeof(global::V0.JsonConverters.ReportsGetUserActivityResponseDataItemUserTeamV0RoleJsonConverter),
 
             typeof(global::V0.JsonConverters.ReportsGetUserActivityResponseDataItemUserTeamV0RoleNullableJsonConverter),
@@ -752,6 +756,7 @@ namespace V0
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::V0.ReportsGetUsageResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUsageResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUsageResponseDataItemType), TypeInfoPropertyName = "ReportsGetUsageResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUsageResponseDataItemCostBreakdownStatus), TypeInfoPropertyName = "ReportsGetUsageResponseDataItemCostBreakdownStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUsageResponsePagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetUsageResponseMeta))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::V0.ReportsGetAIUsageResponse))]

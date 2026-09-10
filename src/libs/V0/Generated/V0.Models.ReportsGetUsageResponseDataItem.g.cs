@@ -42,6 +42,13 @@ namespace V0
         public string? CompletionCost { get; set; }
 
         /// <summary>
+        /// Whether the cost components are estimated or unavailable. Unavailable components are omitted; totalCost remains authoritative.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("costBreakdownStatus")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ReportsGetUsageResponseDataItemCostBreakdownStatusJsonConverter))]
+        public global::V0.ReportsGetUsageResponseDataItemCostBreakdownStatus? CostBreakdownStatus { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("totalCost")]
@@ -96,6 +103,9 @@ namespace V0
         /// <param name="type"></param>
         /// <param name="promptCost"></param>
         /// <param name="completionCost"></param>
+        /// <param name="costBreakdownStatus">
+        /// Whether the cost components are estimated or unavailable. Unavailable components are omitted; totalCost remains authoritative.
+        /// </param>
         /// <param name="chatId"></param>
         /// <param name="messageId"></param>
         /// <param name="userId">
@@ -115,6 +125,7 @@ namespace V0
             global::V0.ReportsGetUsageResponseDataItemType? type,
             string? promptCost,
             string? completionCost,
+            global::V0.ReportsGetUsageResponseDataItemCostBreakdownStatus? costBreakdownStatus,
             string? chatId,
             string? messageId,
             string? userId,
@@ -126,6 +137,7 @@ namespace V0
             this.Type = type;
             this.PromptCost = promptCost;
             this.CompletionCost = completionCost;
+            this.CostBreakdownStatus = costBreakdownStatus;
             this.TotalCost = totalCost ?? throw new global::System.ArgumentNullException(nameof(totalCost));
             this.ChatId = chatId;
             this.MessageId = messageId;

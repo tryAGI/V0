@@ -5516,6 +5516,12 @@ paths:
                           type: string
                         completionCost:
                           type: string
+                        costBreakdownStatus:
+                          description: Whether the cost components are estimated or unavailable. Unavailable components are omitted; totalCost remains authoritative.
+                          type: string
+                          enum:
+                            - estimated
+                            - unavailable
                         totalCost:
                           type: string
                         chatId:
