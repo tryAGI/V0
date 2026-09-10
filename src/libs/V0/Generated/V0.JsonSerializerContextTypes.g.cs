@@ -1369,139 +1369,143 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetUsageResponsePagination? Type334 { get; set; }
+        public global::V0.ReportsGetUsageResponseDataItemCostBreakdownStatus? Type334 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetUsageResponseMeta? Type335 { get; set; }
+        public global::V0.ReportsGetUsageResponsePagination? Type335 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetAIUsageResponse? Type336 { get; set; }
+        public global::V0.ReportsGetUsageResponseMeta? Type336 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ReportsGetAIUsageResponseDataItem>? Type337 { get; set; }
+        public global::V0.ReportsGetAIUsageResponse? Type337 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetAIUsageResponseDataItem? Type338 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ReportsGetAIUsageResponseDataItem>? Type338 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetAIUsageResponsePagination? Type339 { get; set; }
+        public global::V0.ReportsGetAIUsageResponseDataItem? Type339 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetAIUsageResponseDateRange? Type340 { get; set; }
+        public global::V0.ReportsGetAIUsageResponsePagination? Type340 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponse? Type341 { get; set; }
+        public global::V0.ReportsGetAIUsageResponseDateRange? Type341 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.ReportsGetUserActivityResponseDataItem>? Type342 { get; set; }
+        public global::V0.ReportsGetUserActivityResponse? Type342 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseDataItem? Type343 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.ReportsGetUserActivityResponseDataItem>? Type343 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseDataItemUser? Type344 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseDataItem? Type344 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role? Type345 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseDataItemUser? Type345 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseMeta? Type346 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseDataItemUserTeamV0Role? Type346 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.ReportsGetUserActivityResponseMetaDateRange? Type347 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseMeta? Type347 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersFindResponse? Type348 { get; set; }
+        public global::V0.ReportsGetUserActivityResponseMetaDateRange? Type348 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::V0.McpServersFindResponseDataItem>? Type349 { get; set; }
+        public global::V0.McpServersFindResponse? Type349 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersFindResponseDataItem? Type350 { get; set; }
+        public global::System.Collections.Generic.IList<global::V0.McpServersFindResponseDataItem>? Type350 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersFindResponseDataItemAuth? Type351 { get; set; }
+        public global::V0.McpServersFindResponseDataItem? Type351 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersFindResponseDataItemAuthType? Type352 { get; set; }
+        public global::V0.McpServersFindResponseDataItemAuth? Type352 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersFindResponseDataItemScope? Type353 { get; set; }
+        public global::V0.McpServersFindResponseDataItemAuthType? Type353 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersCreateResponse? Type354 { get; set; }
+        public global::V0.McpServersFindResponseDataItemScope? Type354 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersCreateResponseAuth? Type355 { get; set; }
+        public global::V0.McpServersCreateResponse? Type355 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersCreateResponseAuthType? Type356 { get; set; }
+        public global::V0.McpServersCreateResponseAuth? Type356 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersCreateResponseScope? Type357 { get; set; }
+        public global::V0.McpServersCreateResponseAuthType? Type357 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersGetByIdResponse? Type358 { get; set; }
+        public global::V0.McpServersCreateResponseScope? Type358 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersGetByIdResponseAuth? Type359 { get; set; }
+        public global::V0.McpServersGetByIdResponse? Type359 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersGetByIdResponseAuthType? Type360 { get; set; }
+        public global::V0.McpServersGetByIdResponseAuth? Type360 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersGetByIdResponseScope? Type361 { get; set; }
+        public global::V0.McpServersGetByIdResponseAuthType? Type361 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersUpdateResponse? Type362 { get; set; }
+        public global::V0.McpServersGetByIdResponseScope? Type362 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersUpdateResponseAuth? Type363 { get; set; }
+        public global::V0.McpServersUpdateResponse? Type363 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersUpdateResponseAuthType? Type364 { get; set; }
+        public global::V0.McpServersUpdateResponseAuth? Type364 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersUpdateResponseScope? Type365 { get; set; }
+        public global::V0.McpServersUpdateResponseAuthType? Type365 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersDeleteResponse? Type366 { get; set; }
+        public global::V0.McpServersUpdateResponseScope? Type366 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::V0.McpServersCreateOAuthAuthorizationUrlResponse? Type367 { get; set; }
+        public global::V0.McpServersDeleteResponse? Type367 { get; set; }
+        /// <summary>
+        ///
+        /// </summary>
+        public global::V0.McpServersCreateOAuthAuthorizationUrlResponse? Type368 { get; set; }
 
         /// <summary>
         ///
