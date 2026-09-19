@@ -23,7 +23,7 @@ namespace V0
         public global::System.Collections.Generic.IList<string>? ConnectedIntegrationNames { get; set; }
 
         /// <summary>
-        /// Qualified npm registry IDs that were successfully connected (e.g. "npm:https://registry.example.com/"). Pass an empty array to skip.<br/>
+        /// Deprecated. npm registry connections are no longer supported; this field is accepted for compatibility and ignored.<br/>
         /// Default Value: []
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectedNpmRegistryIds")]
@@ -65,7 +65,7 @@ namespace V0
         /// Default Value: []
         /// </param>
         /// <param name="connectedNpmRegistryIds">
-        /// Qualified npm registry IDs that were successfully connected (e.g. "npm:https://registry.example.com/"). Pass an empty array to skip.<br/>
+        /// Deprecated. npm registry connections are no longer supported; this field is accepted for compatibility and ignored.<br/>
         /// Default Value: []
         /// </param>
         /// <param name="connectedMcpPresetNames">
