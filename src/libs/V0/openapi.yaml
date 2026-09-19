@@ -2372,7 +2372,7 @@ paths:
                             type: string
                             maxLength: 2052
                         connectedNpmRegistryIds:
-                          description: Qualified npm registry IDs that were successfully connected (e.g. "npm:https://registry.example.com/"). Pass an empty array to skip.
+                          description: Deprecated. npm registry connections are no longer supported; this field is accepted for compatibility and ignored.
                           default: []
                           type: array
                           items:
