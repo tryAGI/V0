@@ -35,6 +35,10 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
+        Mobbin,
+        /// <summary>
+        ///
+        /// </summary>
         Notion,
         /// <summary>
         ///
@@ -76,6 +80,7 @@ namespace V0
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Granola => "Granola",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Hex => "Hex",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Linear => "Linear",
+                ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Mobbin => "Mobbin",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Notion => "Notion",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.PostHog => "PostHog",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Sanity => "Sanity",
@@ -98,6 +103,7 @@ namespace V0
                 "Granola" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Granola,
                 "Hex" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Hex,
                 "Linear" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Linear,
+                "Mobbin" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Mobbin,
                 "Notion" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Notion,
                 "PostHog" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.PostHog,
                 "Sanity" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Sanity,
