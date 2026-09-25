@@ -2396,6 +2396,7 @@ paths:
                               - Granola
                               - PostHog
                               - Contentful
+                              - Mobbin
                               - Slack
                         appliedScripts:
                           description: Names of scripts that were applied.
