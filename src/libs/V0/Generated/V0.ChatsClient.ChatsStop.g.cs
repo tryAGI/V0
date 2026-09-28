@@ -155,8 +155,8 @@ namespace V0
                 PrepareChatsStopRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    chatId: chatId!,
-                    messageId: messageId!);
+                    chatId: chatId,
+                    messageId: messageId);
 
                 return __httpRequest;
             }
@@ -178,7 +178,7 @@ namespace V0
                                 pathTemplate: "$\"/chats/{chatId}/messages/{messageId}/stop\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -212,7 +212,7 @@ namespace V0
                                 pathTemplate: "$\"/chats/{chatId}/messages/{messageId}/stop\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -253,7 +253,7 @@ namespace V0
                                 pathTemplate: "$\"/chats/{chatId}/messages/{messageId}/stop\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -301,7 +301,7 @@ namespace V0
                                 pathTemplate: "$\"/chats/{chatId}/messages/{messageId}/stop\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -323,7 +323,7 @@ namespace V0
                                 pathTemplate: "$\"/chats/{chatId}/messages/{messageId}/stop\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
