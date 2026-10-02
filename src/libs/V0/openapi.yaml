@@ -2398,6 +2398,7 @@ paths:
                               - Contentful
                               - Mobbin
                               - Slack
+                              - Nitrosend
                         appliedScripts:
                           description: Names of scripts that were applied.
                           default: []
