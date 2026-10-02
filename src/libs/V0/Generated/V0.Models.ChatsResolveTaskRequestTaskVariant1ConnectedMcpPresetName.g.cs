@@ -39,6 +39,10 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
+        Nitrosend,
+        /// <summary>
+        ///
+        /// </summary>
         Notion,
         /// <summary>
         ///
@@ -81,6 +85,7 @@ namespace V0
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Hex => "Hex",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Linear => "Linear",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Mobbin => "Mobbin",
+                ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Nitrosend => "Nitrosend",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Notion => "Notion",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.PostHog => "PostHog",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Sanity => "Sanity",
@@ -104,6 +109,7 @@ namespace V0
                 "Hex" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Hex,
                 "Linear" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Linear,
                 "Mobbin" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Mobbin,
+                "Nitrosend" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Nitrosend,
                 "Notion" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Notion,
                 "PostHog" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.PostHog,
                 "Sanity" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Sanity,
