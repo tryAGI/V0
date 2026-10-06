@@ -2399,6 +2399,7 @@ paths:
                               - Mobbin
                               - Slack
                               - Nitrosend
+                              - Datadog
                         appliedScripts:
                           description: Names of scripts that were applied.
                           default: []

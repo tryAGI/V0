@@ -19,6 +19,10 @@ namespace V0
         /// <summary>
         ///
         /// </summary>
+        Datadog,
+        /// <summary>
+        ///
+        /// </summary>
         Glean,
         /// <summary>
         ///
@@ -80,6 +84,7 @@ namespace V0
             {
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Contentful => "Contentful",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Context7 => "Context7",
+                ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Datadog => "Datadog",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Glean => "Glean",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Granola => "Granola",
                 ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Hex => "Hex",
@@ -104,6 +109,7 @@ namespace V0
             {
                 "Contentful" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Contentful,
                 "Context7" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Context7,
+                "Datadog" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Datadog,
                 "Glean" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Glean,
                 "Granola" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Granola,
                 "Hex" => ChatsResolveTaskRequestTaskVariant1ConnectedMcpPresetName.Hex,
