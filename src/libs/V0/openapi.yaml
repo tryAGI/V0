@@ -64,14 +64,19 @@ paths:
                   properties:
                     modelId:
                       default: v0-pro
-                      type: string
-                      enum:
-                        - v0-auto
-                        - v0-mini
-                        - v0-pro
-                        - v0-max
-                        - v0-max-fast
-                      description: Model to use for the generation. `v0-auto` is deprecated and falls back to `v0-pro`.
+                      anyOf:
+                        - type: string
+                          enum:
+                            - v0-auto
+                            - v0-mini
+                            - v0-pro
+                            - v0-max
+                            - v0-max-fast
+                        - type: string
+                          minLength: 3
+                          maxLength: 200
+                          pattern: ^[a-z0-9][a-z0-9._-]*\/[a-z0-9][a-z0-9._/-]*$
+                      description: Model to use for the generation. Use a v0 model ID, or an [AI Gateway](https://vercel.com/ai-gateway/models) model ID in `creator/model` format. Gateway models must support tool calling and Zero Data Retention, and are subject to team model policy; unsupported IDs are rejected. `v0-auto` is deprecated and falls back to `v0-pro`.
                     imageGenerations:
                       default: false
                       type: boolean
@@ -1406,14 +1411,19 @@ paths:
                   properties:
                     modelId:
                       default: v0-pro
-                      type: string
-                      enum:
-                        - v0-auto
-                        - v0-mini
-                        - v0-pro
-                        - v0-max
-                        - v0-max-fast
-                      description: Model to use for the generation. `v0-auto` is deprecated and falls back to `v0-pro`.
+                      anyOf:
+                        - type: string
+                          enum:
+                            - v0-auto
+                            - v0-mini
+                            - v0-pro
+                            - v0-max
+                            - v0-max-fast
+                        - type: string
+                          minLength: 3
+                          maxLength: 200
+                          pattern: ^[a-z0-9][a-z0-9._-]*\/[a-z0-9][a-z0-9._/-]*$
+                      description: Model to use for the generation. Use a v0 model ID, or an [AI Gateway](https://vercel.com/ai-gateway/models) model ID in `creator/model` format. Gateway models must support tool calling and Zero Data Retention, and are subject to team model policy; unsupported IDs are rejected. `v0-auto` is deprecated and falls back to `v0-pro`.
                     imageGenerations:
                       default: false
                       type: boolean
@@ -2580,14 +2590,19 @@ paths:
                   properties:
                     modelId:
                       default: v0-pro
-                      type: string
-                      enum:
-                        - v0-auto
-                        - v0-mini
-                        - v0-pro
-                        - v0-max
-                        - v0-max-fast
-                      description: Model to use for the generation. `v0-auto` is deprecated and falls back to `v0-pro`.
+                      anyOf:
+                        - type: string
+                          enum:
+                            - v0-auto
+                            - v0-mini
+                            - v0-pro
+                            - v0-max
+                            - v0-max-fast
+                        - type: string
+                          minLength: 3
+                          maxLength: 200
+                          pattern: ^[a-z0-9][a-z0-9._-]*\/[a-z0-9][a-z0-9._/-]*$
+                      description: Model to use for the generation. Use a v0 model ID, or an [AI Gateway](https://vercel.com/ai-gateway/models) model ID in `creator/model` format. Gateway models must support tool calling and Zero Data Retention, and are subject to team model policy; unsupported IDs are rejected. `v0-auto` is deprecated and falls back to `v0-pro`.
                     imageGenerations:
                       default: false
                       type: boolean
@@ -7569,15 +7584,20 @@ components:
           properties:
             modelId:
               default: v0-pro
-              type: string
-              enum:
-                - v0-auto
-                - v0-opus-4.7
-                - v0-opus-4.7-fast
-                - v0-mini
-                - v0-pro
-                - v0-max
-                - v0-max-fast
+              anyOf:
+                - type: string
+                  enum:
+                    - v0-auto
+                    - v0-opus-4.7
+                    - v0-opus-4.7-fast
+                    - v0-mini
+                    - v0-pro
+                    - v0-max
+                    - v0-max-fast
+                - type: string
+                  minLength: 3
+                  maxLength: 200
+                  pattern: ^[a-z0-9][a-z0-9._-]*\/[a-z0-9][a-z0-9._/-]*$
               description: Model to use for the generation. `v0-auto` is deprecated and falls back to `v0-pro`.
             imageGenerations:
               default: false

@@ -9,12 +9,12 @@ namespace V0
     public sealed partial class ChatsResolveTaskRequestModelConfiguration
     {
         /// <summary>
-        /// Model to use for the generation. `v0-auto` is deprecated and falls back to `v0-pro`.<br/>
+        /// Model to use for the generation. Use a v0 model ID, or an [AI Gateway](https://vercel.com/ai-gateway/models) model ID in `creator/model` format. Gateway models must support tool calling and Zero Data Retention, and are subject to team model policy; unsupported IDs are rejected. `v0-auto` is deprecated and falls back to `v0-pro`.<br/>
         /// Default Value: v0-pro
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("modelId")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatsResolveTaskRequestModelConfigurationModelIdJsonConverter))]
-        public global::V0.ChatsResolveTaskRequestModelConfigurationModelId? ModelId { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.AnyOfJsonConverter<global::V0.ChatsResolveTaskRequestModelConfigurationModelId?, string>))]
+        public global::V0.AnyOf<global::V0.ChatsResolveTaskRequestModelConfigurationModelId?, string>? ModelId { get; set; }
 
         /// <summary>
         /// Enables image generations to generate up to 5 images per version.<br/>
@@ -52,7 +52,7 @@ namespace V0
         /// Initializes a new instance of the <see cref="ChatsResolveTaskRequestModelConfiguration" /> class.
         /// </summary>
         /// <param name="modelId">
-        /// Model to use for the generation. `v0-auto` is deprecated and falls back to `v0-pro`.<br/>
+        /// Model to use for the generation. Use a v0 model ID, or an [AI Gateway](https://vercel.com/ai-gateway/models) model ID in `creator/model` format. Gateway models must support tool calling and Zero Data Retention, and are subject to team model policy; unsupported IDs are rejected. `v0-auto` is deprecated and falls back to `v0-pro`.<br/>
         /// Default Value: v0-pro
         /// </param>
         /// <param name="imageGenerations">
@@ -69,7 +69,7 @@ namespace V0
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatsResolveTaskRequestModelConfiguration(
-            global::V0.ChatsResolveTaskRequestModelConfigurationModelId? modelId,
+            global::V0.AnyOf<global::V0.ChatsResolveTaskRequestModelConfigurationModelId?, string>? modelId,
             bool? imageGenerations,
             bool? thinking,
             global::V0.ChatsResolveTaskRequestModelConfigurationThinkingEffort? thinkingEffort,

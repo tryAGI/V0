@@ -13,8 +13,8 @@ namespace V0
         /// Default Value: v0-pro
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("modelId")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.ChatDetailModelConfigurationModelIdJsonConverter))]
-        public global::V0.ChatDetailModelConfigurationModelId? ModelId { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::V0.JsonConverters.AnyOfJsonConverter<global::V0.ChatDetailModelConfigurationModelId?, string>))]
+        public global::V0.AnyOf<global::V0.ChatDetailModelConfigurationModelId?, string>? ModelId { get; set; }
 
         /// <summary>
         /// Enables image generations to generate up to 5 images per version.<br/>
@@ -69,7 +69,7 @@ namespace V0
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ChatDetailModelConfiguration(
-            global::V0.ChatDetailModelConfigurationModelId? modelId,
+            global::V0.AnyOf<global::V0.ChatDetailModelConfigurationModelId?, string>? modelId,
             bool? imageGenerations,
             bool? thinking,
             global::V0.ChatDetailModelConfigurationThinkingEffort? thinkingEffort,
