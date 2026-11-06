@@ -5540,6 +5540,7 @@ paths:
                             - buy-template
                             - reverse_template_sale
                             - refund_template_purchase
+                            - security_review
                         promptCost:
                           type: string
                         completionCost:
