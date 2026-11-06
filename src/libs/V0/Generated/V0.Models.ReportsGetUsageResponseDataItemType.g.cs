@@ -40,6 +40,10 @@ namespace V0
         ///
         /// </summary>
         ReverseTemplateSale,
+        /// <summary>
+        ///
+        /// </summary>
+        SecurityReview,
     }
 
     /// <summary>
@@ -62,6 +66,7 @@ namespace V0
                 ReportsGetUsageResponseDataItemType.Message => "message",
                 ReportsGetUsageResponseDataItemType.RefundTemplatePurchase => "refund_template_purchase",
                 ReportsGetUsageResponseDataItemType.ReverseTemplateSale => "reverse_template_sale",
+                ReportsGetUsageResponseDataItemType.SecurityReview => "security_review",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -80,6 +85,7 @@ namespace V0
                 "message" => ReportsGetUsageResponseDataItemType.Message,
                 "refund_template_purchase" => ReportsGetUsageResponseDataItemType.RefundTemplatePurchase,
                 "reverse_template_sale" => ReportsGetUsageResponseDataItemType.ReverseTemplateSale,
+                "security_review" => ReportsGetUsageResponseDataItemType.SecurityReview,
                 _ => null,
             };
         }
