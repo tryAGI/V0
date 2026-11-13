@@ -7520,6 +7520,21 @@ components:
                     contentType:
                       description: The MIME type of the attachment file (e.g., image/png, application/pdf).
                       type: string
+                    imageDimensions:
+                      type: object
+                      properties:
+                        width:
+                          type: integer
+                          exclusiveMinimum: 0
+                          maximum: 65535
+                        height:
+                          type: integer
+                          exclusiveMinimum: 0
+                          maximum: 65535
+                      required:
+                        - width
+                        - height
+                      additionalProperties: false
                     size:
                       type: number
                       description: The size of the attachment file in bytes.
@@ -8627,6 +8642,21 @@ components:
               contentType:
                 description: The MIME type of the attachment file (e.g., image/png, application/pdf).
                 type: string
+              imageDimensions:
+                type: object
+                properties:
+                  width:
+                    type: integer
+                    exclusiveMinimum: 0
+                    maximum: 65535
+                  height:
+                    type: integer
+                    exclusiveMinimum: 0
+                    maximum: 65535
+                required:
+                  - width
+                  - height
+                additionalProperties: false
               size:
                 type: number
                 description: The size of the attachment file in bytes.
@@ -8938,6 +8968,21 @@ components:
               contentType:
                 description: The MIME type of the attachment file (e.g., image/png, application/pdf).
                 type: string
+              imageDimensions:
+                type: object
+                properties:
+                  width:
+                    type: integer
+                    exclusiveMinimum: 0
+                    maximum: 65535
+                  height:
+                    type: integer
+                    exclusiveMinimum: 0
+                    maximum: 65535
+                required:
+                  - width
+                  - height
+                additionalProperties: false
               size:
                 type: number
                 description: The size of the attachment file in bytes.
@@ -9254,6 +9299,21 @@ components:
                     contentType:
                       description: The MIME type of the attachment file (e.g., image/png, application/pdf).
                       type: string
+                    imageDimensions:
+                      type: object
+                      properties:
+                        width:
+                          type: integer
+                          exclusiveMinimum: 0
+                          maximum: 65535
+                        height:
+                          type: integer
+                          exclusiveMinimum: 0
+                          maximum: 65535
+                      required:
+                        - width
+                        - height
+                      additionalProperties: false
                     size:
                       type: number
                       description: The size of the attachment file in bytes.

@@ -28,6 +28,12 @@ namespace V0
         public string? ContentType { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("imageDimensions")]
+        public global::V0.MessageSummaryListDataItemAttachmentImageDimensions? ImageDimensions { get; set; }
+
+        /// <summary>
         /// The size of the attachment file in bytes.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("size")]
@@ -68,6 +74,7 @@ namespace V0
         /// <param name="contentType">
         /// The MIME type of the attachment file (e.g., image/png, application/pdf).
         /// </param>
+        /// <param name="imageDimensions"></param>
         /// <param name="content">
         /// The base64-encoded content of the attachment file, if available.
         /// </param>
@@ -82,12 +89,14 @@ namespace V0
             double size,
             string? name,
             string? contentType,
+            global::V0.MessageSummaryListDataItemAttachmentImageDimensions? imageDimensions,
             string? content,
             global::V0.MessageSummaryListDataItemAttachmentType? type)
         {
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Name = name;
             this.ContentType = contentType;
+            this.ImageDimensions = imageDimensions;
             this.Size = size;
             this.Content = content;
             this.Type = type;
